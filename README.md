@@ -6,8 +6,9 @@ This repository contains both dynamic and static data mined from the LLVM Test S
 Linux Perf is a powerful suite of performance monitoring tools available on Linux systems, enabling users to collect and analyze detailed performance data. 
 The tool used to extract our data is *perf stat*, which uses Performance Monitoring Units (PMUs) to record hardware events during code execution. 
 
-## GCC Milepost 
- --
+## GCC Milepost Features
+The GCC Milepost describe a set of 56 features, such as CFG metrics, that can be used to analyze programs from source code staticaly. 
+
 
 ## Environment Details
 
