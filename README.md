@@ -22,3 +22,12 @@ The tool used to extract our data is *perf stat*, which uses Performance Monitor
 - **Clang/Clang++:** 17.0.6
 - **LLVM Test-Suite Build:**: Release 17
 - **Linux Perf:** 5.4.269
+
+
+## References and External Links
+- [LLVM Test Suite Guide](https://www.llvm.org/docs/TestSuiteGuide.html)
+- [Linux Perf Wiki](https://perf.wiki.kernel.org/index.php/Main_Page)
+- [SPEC CPU 2017](https://www.spec.org/cpu2017/)
+- [Milepost](https://en.wikipedia.org/wiki/MILEPOST_GCC)
+- [Milespost Paper](https://ebonilla.github.io/papers/fursin-et-al-ijpp-2011.pdf)
+- The Milepost Features are described in the Table 2 of the paper.
