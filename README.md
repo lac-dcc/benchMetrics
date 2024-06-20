@@ -15,6 +15,9 @@ These features include number of basic blocks, number of edges in the control fl
 To collect the features, we have used the MilePost implementation available in the [YaCoS](https://homepages.dcc.ufmg.br/~fernando/publications/papers/ZanellaSBLP20.pdf) compiler.
 The data that we report in this repository is the same data that we have used in two other papers to explore the space of compiler optimizations in clang, by [Faustino et al](https://homepages.dcc.ufmg.br/~fernando/publications/papers/FaustinoJCL22.pdf) and by [Damasio et al.](https://homepages.dcc.ufmg.br/~fernando/publications/papers/CGO23_ThaisDamasio.pdf)
 
+**Software**: features were collected via an [LLVM pass](https://llvm.org/docs/WritingAnLLVMNewPMPass.html) implemented in clang v17.0.0.
+This pass uses the new pass manager.
+
 ## Environment Details
 
 ### Hardware
