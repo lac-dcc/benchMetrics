@@ -17,6 +17,11 @@ The data that we report in this repository is the same data that we have used in
 
 ### Hardware
 - **CPU:**  Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz
+- **CPU Cores Number:** 10
+- **Threads Number:** 20
+- **L1 Cache Size:** 10 x 32 KB instruction caches and 10 x 32 KB data caches
+- **L2 Cache Size:** 10 x 256 KB
+- **L3 Cache Size:** 25 MB
 - **RAM:** 32GB
 ### Software
 - **Operating System:** Ubuntu 20.04.6 LTS
