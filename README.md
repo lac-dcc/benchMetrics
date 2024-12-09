@@ -31,7 +31,6 @@ The data that we report in this repository is the same data that we have used in
 - **LLVM Test-Suite Build:**: Release 17
 - **Linux Perf:** 5.4.269
 
-
 ## External Links
 
 - [LLVM Test Suite Guide](https://www.llvm.org/docs/TestSuiteGuide.html)
