@@ -70,12 +70,6 @@ is strongly affected by outliers. To minimize these effects, we calculated the g
 
 <p align="center">
   </br>
-  <img alt="logo" src="./assets/comparing_compilers.png" width="100%" height="auto"/>
-  
-</p>
-
-<p align="center">
-  </br>
   <img alt="logo" src="./assets/geometric_mean_compilers.png" width="100%" height="auto"/>
   
 </p>
@@ -87,11 +81,6 @@ the optimization level. Additionally, we observed that CLANG converged at -O2, w
 ## Comparing Version of GCC
 
 In this experiment, we are interested in the evolution of the GCC compiler, including its optimizations. As in the first experiment, we compared the absolute difference and the geometric mean difference between the compilers.
-
-<p align="center">
-  </br>
-  <img alt="logo" src="./assets/gcc-version.png" width="100%" height="auto"/>
-</p>
 
 <p align="center">
   </br>
