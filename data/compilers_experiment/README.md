@@ -78,7 +78,7 @@ As a result, TCC was slower than both GCC and CLANG without optimizations, being
 The GCC and CLANG compilers had similar performance without optimizations, with a slight advantage for CLANG. However, CLANG's advantage increased as we raised
 the optimization level. Additionally, we observed that CLANG converged at -O2, while there was a gap between GCC -O2 and -O3.
 
-## Comparing Version of GCC
+## Comparing Versions of GCC
 
 In this experiment, we are interested in the evolution of the GCC compiler, including its optimizations. As in the first experiment, we compared the absolute difference and the geometric mean difference between the compilers.
 
