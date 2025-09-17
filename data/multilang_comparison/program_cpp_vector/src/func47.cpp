@@ -1,9 +1,9 @@
-#include "program_vector_cpp.hpp" 
+#include "program_cpp_vector.hpp" 
 Array* func47(Array_param* vars, int loopsFactor) {
    size_t pCounter = vars->size;
    Array* array11;
    if (pCounter > 0) {
-      array11 = vars->data[--pCounter];
+      array11 = vars->data.at(--pCounter);
       array11->refC++;
       DEBUG_COPY(array11->id);
    } else {
@@ -11,7 +11,7 @@ Array* func47(Array_param* vars, int loopsFactor) {
       array11->size = 919;
       array11->refC = 1;
       array11->id = 11;
-      array11->data = new unsigned int[array11->size]();
+      array11->data = std::vector<unsigned int>(array11->size, 0);
       DEBUG_NEW(array11->id);
    }
    return array11;

@@ -1,4 +1,4 @@
-#include "program_vector_cpp.hpp" 
+#include "program_cpp_vector.hpp" 
 Array* func43(Array_param* vars, int loopsFactor) {
    size_t pCounter = vars->size;
    unsigned int loop11 = 0;
@@ -7,7 +7,7 @@ Array* func43(Array_param* vars, int loopsFactor) {
    }
    Array* array30;
    if (pCounter > 0) {
-      array30 = vars->data[--pCounter];
+      array30 = vars->data.at(--pCounter);
       array30->refC++;
       DEBUG_COPY(array30->id);
    } else {
@@ -15,7 +15,7 @@ Array* func43(Array_param* vars, int loopsFactor) {
       array30->size = 286;
       array30->refC = 1;
       array30->id = 30;
-      array30->data = new unsigned int[array30->size]();
+      array30->data = std::vector<unsigned int>(array30->size, 0);
       DEBUG_NEW(array30->id);
    }
    return array30;

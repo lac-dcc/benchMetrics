@@ -1,5 +1,5 @@
-#ifndef program_vector_cpp
-#define program_vector_cpp
+#ifndef program_cpp_vector
+#define program_cpp_vector
 #include <stdio.h>
 #include <cstdlib>
 #include <string>
@@ -23,16 +23,16 @@
 
 class Array {
 public:
-   unsigned int* data;
+   std::vector<unsigned int> data;
    size_t size;
    size_t refC;
    int id;
-   Array() : data(nullptr), size(0), refC(0), id(0) {}
+   Array() : data(0), size(0), refC(0), id(0) {}
    ~Array() {}
 };
 class Array_param {
 public:
-   Array** data;
+   std::vector<Array*> data;
    size_t size;
    Array_param() : size(0) {}
 };

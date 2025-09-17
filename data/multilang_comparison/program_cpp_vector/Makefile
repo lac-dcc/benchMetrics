@@ -1,6 +1,6 @@
 CXX = clang++
 LLVMFLAGS = -DDEBUG -S -emit-llvm
-TARGET = program_vector_cpp
+TARGET = program_cpp_vector
 SRC_DIR = src
 OBJ_DIR = obj
 LL_DIR = ll
