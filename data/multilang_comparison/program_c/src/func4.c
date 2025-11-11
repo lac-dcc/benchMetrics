@@ -1,201 +1,201 @@
 #include "program_c.h" 
 array_t* func4(array_t_param* vars, const unsigned long PATH0, int loopsFactor) {
    size_t pCounter = vars->size;
-   array_t* array142;
+   array_t* array110;
    if (pCounter > 0) {
-      array142 = vars->data[--pCounter];
-      array142->refC++;
-      DEBUG_COPY(array142->id);
+      array110 = vars->data[--pCounter];
+      array110->refC++;
+      DEBUG_COPY(array110->id);
    } else {
-      array142 = (array_t*)malloc(sizeof(array_t));
-      array142->size = 681;
-      array142->refC = 1;
-      array142->id = 142;
-      array142->data = (unsigned int*)malloc(array142->size*sizeof(unsigned int));
-      memset(array142->data, 0, array142->size*sizeof(unsigned int));
-      DEBUG_NEW(array142->id);
+      array110 = (array_t*)malloc(sizeof(array_t));
+      array110->size = 209;
+      array110->refC = 1;
+      array110->id = 110;
+      array110->data = (unsigned int*)malloc(array110->size*sizeof(unsigned int));
+      memset(array110->data, 0, array110->size*sizeof(unsigned int));
+      DEBUG_NEW(array110->id);
    }
-   unsigned int loop42 = 0;
-   unsigned int loopLimit42 = (rand()%loopsFactor)/3 + 1;
-   for(; loop42 < loopLimit42; loop42++) {
+   unsigned int loop33 = 0;
+   unsigned int loopLimit33 = (50)/3 + 1;
+   for(; loop33 < loopLimit33; loop33++) {
       if(PATH0 & 1) {
-         array_t* array143;
+         array_t* array111;
          if (pCounter > 0) {
-            array143 = vars->data[--pCounter];
-            array143->refC++;
-            DEBUG_COPY(array143->id);
+            array111 = vars->data[--pCounter];
+            array111->refC++;
+            DEBUG_COPY(array111->id);
          } else {
-            array143 = (array_t*)malloc(sizeof(array_t));
-            array143->size = 647;
-            array143->refC = 1;
-            array143->id = 143;
-            array143->data = (unsigned int*)malloc(array143->size*sizeof(unsigned int));
-            memset(array143->data, 0, array143->size*sizeof(unsigned int));
-            DEBUG_NEW(array143->id);
+            array111 = (array_t*)malloc(sizeof(array_t));
+            array111->size = 581;
+            array111->refC = 1;
+            array111->id = 111;
+            array111->data = (unsigned int*)malloc(array111->size*sizeof(unsigned int));
+            memset(array111->data, 0, array111->size*sizeof(unsigned int));
+            DEBUG_NEW(array111->id);
          }
-         unsigned int loop43 = 0;
-         unsigned int loopLimit43 = (rand()%loopsFactor)/4 + 1;
-         for(; loop43 < loopLimit43; loop43++) {
-            for (int i = 0; i < array142->size; i++) {
-               array142->data[i]--;
+         unsigned int loop34 = 0;
+         unsigned int loopLimit34 = (50)/4 + 1;
+         for(; loop34 < loopLimit34; loop34++) {
+            for (int i = 0; i < array111->size; i++) {
+               array111->data[i]--;
             }
-            for (int i = 0; i < array143->size; i++) {
-               if (array143->data[i] == 51) { 
-                  return array143;
+            for (int i = 0; i < array110->size; i++) {
+               if (array110->data[i] == 32) { 
+                  return array110;
                }
             }
          }
          array_t_param params0;
          params0.size = 2;
          params0.data = (array_t**)malloc(params0.size*sizeof(array_t*));
-         params0.data[0] = array142;
-         params0.data[1] = array143;
-         array_t* array144 = func24(&params0, get_path(), loopsFactor);
-         DEBUG_RETURN(array144->id);
+         params0.data[0] = array110;
+         params0.data[1] = array111;
+         array_t* array112 = func24(&params0, get_path(), loopsFactor);
+         DEBUG_RETURN(array112->id);
          free(params0.data);
-         array144->refC--;
-         if(array144->refC == 0) {
-            free(array144->data);
-            free(array144);
-            DEBUG_FREE(array144->id);
+         array112->refC--;
+         if(array112->refC == 0) {
+            free(array112->data);
+            free(array112);
+            DEBUG_FREE(array112->id);
          }
-         array143->refC--;
-         if(array143->refC == 0) {
-            free(array143->data);
-            free(array143);
-            DEBUG_FREE(array143->id);
+         array111->refC--;
+         if(array111->refC == 0) {
+            free(array111->data);
+            free(array111);
+            DEBUG_FREE(array111->id);
          }
       }
       else {
          array_t_param params0;
          params0.size = 1;
          params0.data = (array_t**)malloc(params0.size*sizeof(array_t*));
-         params0.data[0] = array142;
-         array_t* array145 = func16(&params0, get_path(), loopsFactor);
-         DEBUG_RETURN(array145->id);
+         params0.data[0] = array110;
+         array_t* array113 = func16(&params0, get_path(), loopsFactor);
+         DEBUG_RETURN(array113->id);
          free(params0.data);
-         array145->refC--;
-         if(array145->refC == 0) {
-            free(array145->data);
-            free(array145);
-            DEBUG_FREE(array145->id);
+         array113->refC--;
+         if(array113->refC == 0) {
+            free(array113->data);
+            free(array113);
+            DEBUG_FREE(array113->id);
          }
       }
-      array_t* array146;
+      array_t* array114;
       if (pCounter > 0) {
-         array146 = vars->data[--pCounter];
-         array146->refC++;
-         DEBUG_COPY(array146->id);
+         array114 = vars->data[--pCounter];
+         array114->refC++;
+         DEBUG_COPY(array114->id);
       } else {
-         array146 = (array_t*)malloc(sizeof(array_t));
-         array146->size = 215;
-         array146->refC = 1;
-         array146->id = 146;
-         array146->data = (unsigned int*)malloc(array146->size*sizeof(unsigned int));
-         memset(array146->data, 0, array146->size*sizeof(unsigned int));
-         DEBUG_NEW(array146->id);
+         array114 = (array_t*)malloc(sizeof(array_t));
+         array114->size = 769;
+         array114->refC = 1;
+         array114->id = 114;
+         array114->data = (unsigned int*)malloc(array114->size*sizeof(unsigned int));
+         memset(array114->data, 0, array114->size*sizeof(unsigned int));
+         DEBUG_NEW(array114->id);
       }
       array_t_param params0;
       params0.size = 2;
       params0.data = (array_t**)malloc(params0.size*sizeof(array_t*));
-      params0.data[0] = array142;
-      params0.data[1] = array146;
-      array_t* array147 = func17(&params0, loopsFactor);
-      DEBUG_RETURN(array147->id);
+      params0.data[0] = array110;
+      params0.data[1] = array114;
+      array_t* array115 = func17(&params0, loopsFactor);
+      DEBUG_RETURN(array115->id);
       free(params0.data);
       if(PATH0 & 2) {
-         array_t* array148;
+         array_t* array116;
          if (pCounter > 0) {
-            array148 = vars->data[--pCounter];
-            array148->refC++;
-            DEBUG_COPY(array148->id);
+            array116 = vars->data[--pCounter];
+            array116->refC++;
+            DEBUG_COPY(array116->id);
          } else {
-            array148 = (array_t*)malloc(sizeof(array_t));
-            array148->size = 629;
-            array148->refC = 1;
-            array148->id = 148;
-            array148->data = (unsigned int*)malloc(array148->size*sizeof(unsigned int));
-            memset(array148->data, 0, array148->size*sizeof(unsigned int));
-            DEBUG_NEW(array148->id);
+            array116 = (array_t*)malloc(sizeof(array_t));
+            array116->size = 850;
+            array116->refC = 1;
+            array116->id = 116;
+            array116->data = (unsigned int*)malloc(array116->size*sizeof(unsigned int));
+            memset(array116->data, 0, array116->size*sizeof(unsigned int));
+            DEBUG_NEW(array116->id);
          }
-         unsigned int loop44 = 0;
-         unsigned int loopLimit44 = (rand()%loopsFactor)/4 + 1;
-         for(; loop44 < loopLimit44; loop44++) {
-            for (int i = 0; i < array146->size; i++) {
-               array146->data[i]--;
+         unsigned int loop35 = 0;
+         unsigned int loopLimit35 = (50)/4 + 1;
+         for(; loop35 < loopLimit35; loop35++) {
+            for (int i = 0; i < array116->size; i++) {
+               array116->data[i]--;
             }
-            for (int i = 0; i < array142->size; i++) {
-               if (array142->data[i] == 85) { 
-                  return array142;
+            for (int i = 0; i < array110->size; i++) {
+               if (array110->data[i] == 42) { 
+                  return array110;
                }
             }
          }
          array_t_param params1;
          params1.size = 4;
          params1.data = (array_t**)malloc(params1.size*sizeof(array_t*));
-         params1.data[0] = array142;
-         params1.data[1] = array146;
-         params1.data[2] = array147;
-         params1.data[3] = array148;
-         array_t* array149 = func28(&params1, get_path(), loopsFactor);
-         DEBUG_RETURN(array149->id);
+         params1.data[0] = array110;
+         params1.data[1] = array114;
+         params1.data[2] = array115;
+         params1.data[3] = array116;
+         array_t* array117 = func28(&params1, get_path(), loopsFactor);
+         DEBUG_RETURN(array117->id);
          free(params1.data);
-         array149->refC--;
-         if(array149->refC == 0) {
-            free(array149->data);
-            free(array149);
-            DEBUG_FREE(array149->id);
+         array117->refC--;
+         if(array117->refC == 0) {
+            free(array117->data);
+            free(array117);
+            DEBUG_FREE(array117->id);
          }
-         array148->refC--;
-         if(array148->refC == 0) {
-            free(array148->data);
-            free(array148);
-            DEBUG_FREE(array148->id);
+         array116->refC--;
+         if(array116->refC == 0) {
+            free(array116->data);
+            free(array116);
+            DEBUG_FREE(array116->id);
          }
       }
       else {
          array_t_param params1;
          params1.size = 3;
          params1.data = (array_t**)malloc(params1.size*sizeof(array_t*));
-         params1.data[0] = array142;
-         params1.data[1] = array146;
-         params1.data[2] = array147;
-         array_t* array150 = func22(&params1, get_path(), loopsFactor);
-         DEBUG_RETURN(array150->id);
+         params1.data[0] = array110;
+         params1.data[1] = array114;
+         params1.data[2] = array115;
+         array_t* array118 = func22(&params1, get_path(), loopsFactor);
+         DEBUG_RETURN(array118->id);
          free(params1.data);
-         array150->refC--;
-         if(array150->refC == 0) {
-            free(array150->data);
-            free(array150);
-            DEBUG_FREE(array150->id);
+         array118->refC--;
+         if(array118->refC == 0) {
+            free(array118->data);
+            free(array118);
+            DEBUG_FREE(array118->id);
          }
       }
-      for (int i = 0; i < array146->size; i++) {
-         if (array146->data[i] == 38) { 
-            return array146;
+      for (int i = 0; i < array115->size; i++) {
+         if (array115->data[i] == 67) { 
+            return array115;
          }
       }
-      array147->refC--;
-      if(array147->refC == 0) {
-         free(array147->data);
-         free(array147);
-         DEBUG_FREE(array147->id);
+      array115->refC--;
+      if(array115->refC == 0) {
+         free(array115->data);
+         free(array115);
+         DEBUG_FREE(array115->id);
       }
-      array146->refC--;
-      if(array146->refC == 0) {
-         free(array146->data);
-         free(array146);
-         DEBUG_FREE(array146->id);
-      }
-   }
-   for (int i = 0; i < array142->size; i++) {
-      array142->data[i]--;
-   }
-   for (int i = 0; i < array142->size; i++) {
-      if (array142->data[i] == 89) { 
-         return array142;
+      array114->refC--;
+      if(array114->refC == 0) {
+         free(array114->data);
+         free(array114);
+         DEBUG_FREE(array114->id);
       }
    }
-   return array142;
+   for (int i = 0; i < array110->size; i++) {
+      array110->data[i]--;
+   }
+   for (int i = 0; i < array110->size; i++) {
+      if (array110->data[i] == 61) { 
+         return array110;
+      }
+   }
+   return array110;
 }
 

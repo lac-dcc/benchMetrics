@@ -1,98 +1,83 @@
 #include "program_c.h" 
 array_t* func31(array_t_param* vars, const unsigned long PATH0, int loopsFactor) {
    size_t pCounter = vars->size;
-   array_t* array47;
+   array_t* array28;
    if (pCounter > 0) {
-      array47 = vars->data[--pCounter];
-      array47->refC++;
-      DEBUG_COPY(array47->id);
+      array28 = vars->data[--pCounter];
+      array28->refC++;
+      DEBUG_COPY(array28->id);
    } else {
-      array47 = (array_t*)malloc(sizeof(array_t));
-      array47->size = 124;
-      array47->refC = 1;
-      array47->id = 47;
-      array47->data = (unsigned int*)malloc(array47->size*sizeof(unsigned int));
-      memset(array47->data, 0, array47->size*sizeof(unsigned int));
-      DEBUG_NEW(array47->id);
+      array28 = (array_t*)malloc(sizeof(array_t));
+      array28->size = 97;
+      array28->refC = 1;
+      array28->id = 28;
+      array28->data = (unsigned int*)malloc(array28->size*sizeof(unsigned int));
+      memset(array28->data, 0, array28->size*sizeof(unsigned int));
+      DEBUG_NEW(array28->id);
    }
    array_t_param params0;
    params0.size = 1;
    params0.data = (array_t**)malloc(params0.size*sizeof(array_t*));
-   params0.data[0] = array47;
-   array_t* array48 = func35(&params0, loopsFactor);
-   DEBUG_RETURN(array48->id);
+   params0.data[0] = array28;
+   array_t* array29 = func35(&params0, loopsFactor);
+   DEBUG_RETURN(array29->id);
    free(params0.data);
    if(PATH0 & 1) {
-      array_t* array51;
+      array_t* array32;
       if (pCounter > 0) {
-         array51 = vars->data[--pCounter];
-         array51->refC++;
-         DEBUG_COPY(array51->id);
+         array32 = vars->data[--pCounter];
+         array32->refC++;
+         DEBUG_COPY(array32->id);
       } else {
-         array51 = (array_t*)malloc(sizeof(array_t));
-         array51->size = 437;
-         array51->refC = 1;
-         array51->id = 51;
-         array51->data = (unsigned int*)malloc(array51->size*sizeof(unsigned int));
-         memset(array51->data, 0, array51->size*sizeof(unsigned int));
-         DEBUG_NEW(array51->id);
+         array32 = (array_t*)malloc(sizeof(array_t));
+         array32->size = 444;
+         array32->refC = 1;
+         array32->id = 32;
+         array32->data = (unsigned int*)malloc(array32->size*sizeof(unsigned int));
+         memset(array32->data, 0, array32->size*sizeof(unsigned int));
+         DEBUG_NEW(array32->id);
       }
-      unsigned int loop17 = 0;
-      unsigned int loopLimit17 = (rand()%loopsFactor)/4 + 1;
-      for(; loop17 < loopLimit17; loop17++) {
-         for (int i = 0; i < array48->size; i++) {
-            array48->data[i]--;
+      unsigned int loop11 = 0;
+      unsigned int loopLimit11 = (50)/4 + 1;
+      for(; loop11 < loopLimit11; loop11++) {
+         for (int i = 0; i < array32->size; i++) {
+            array32->data[i]--;
          }
-         for (int i = 0; i < array51->size; i++) {
-            if (array51->data[i] == 7) { 
-               return array51;
+         for (int i = 0; i < array29->size; i++) {
+            if (array29->data[i] == 29) { 
+               return array29;
             }
          }
       }
-      array_t_param params1;
-      params1.size = 3;
-      params1.data = (array_t**)malloc(params1.size*sizeof(array_t*));
-      params1.data[0] = array47;
-      params1.data[1] = array48;
-      params1.data[2] = array51;
-      array_t* array52 = func46(&params1, get_path(), loopsFactor);
-      DEBUG_RETURN(array52->id);
-      free(params1.data);
-      array52->refC--;
-      if(array52->refC == 0) {
-         free(array52->data);
-         free(array52);
-         DEBUG_FREE(array52->id);
-      }
-      array51->refC--;
-      if(array51->refC == 0) {
-         free(array51->data);
-         free(array51);
-         DEBUG_FREE(array51->id);
+      array32->refC--;
+      if(array32->refC == 0) {
+         free(array32->data);
+         free(array32);
+         DEBUG_FREE(array32->id);
       }
    }
    else {
       array_t_param params1;
       params1.size = 2;
       params1.data = (array_t**)malloc(params1.size*sizeof(array_t*));
-      params1.data[0] = array47;
-      params1.data[1] = array48;
-      array_t* array53 = func40(&params1, loopsFactor);
-      DEBUG_RETURN(array53->id);
+      params1.data[0] = array28;
+      params1.data[1] = array29;
+      array_t* array33 = func40(&params1, loopsFactor);
+      DEBUG_RETURN(array33->id);
       free(params1.data);
-      array53->refC--;
-      if(array53->refC == 0) {
-         free(array53->data);
-         free(array53);
-         DEBUG_FREE(array53->id);
+      array33->refC--;
+      if(array33->refC == 0) {
+         free(array33->data);
+         free(array33);
+         DEBUG_FREE(array33->id);
       }
    }
-   array47->refC--;
-   if(array47->refC == 0) {
-      free(array47->data);
-      free(array47);
-      DEBUG_FREE(array47->id);
+   array28->refC--;
+   if(array28->refC == 0) {
+      free(array28->data);
+      free(array28);
+      DEBUG_FREE(array28->id);
    }
-   return array48;
+   return array29;
 }
 

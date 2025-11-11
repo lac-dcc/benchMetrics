@@ -6,17 +6,17 @@ Array* func6(Array_param* vars, const unsigned long PATH0, int loopsFactor) {
       params0.size = 0;
       Array* data_params0[0];
       params0.data = data_params0;
-      Array* array191 = func7(&params0, get_path(), loopsFactor);
-      DEBUG_RETURN(array191->id);
+      Array* array159 = func7(&params0, get_path(), loopsFactor);
+      DEBUG_RETURN(array159->id);
       if(params0.size > 0) {
-      	params0.data = nullptr;
+      	 params0.data.clear();
       }
-      array191->refC--;
-      if(array191->refC == 0) {
-         delete[] array191->data;
-         array191->data = nullptr;
-         DEBUG_FREE(array191->id);
-         delete array191;
+      array159->refC--;
+      if(array159->refC == 0) {
+         delete[] array159->data;
+         array159->data = nullptr;
+         DEBUG_FREE(array159->id);
+         delete array159;
       }
    }
    else {
@@ -24,28 +24,28 @@ Array* func6(Array_param* vars, const unsigned long PATH0, int loopsFactor) {
       params0.size = 0;
       Array* data_params0[0];
       params0.data = data_params0;
-      Array* array201 = func8(&params0, get_path(), loopsFactor);
-      DEBUG_RETURN(array201->id);
+      Array* array169 = func8(&params0, get_path(), loopsFactor);
+      DEBUG_RETURN(array169->id);
       if(params0.size > 0) {
-      	params0.data = nullptr;
+      	 params0.data.clear();
       }
-      array201->refC--;
-      if(array201->refC == 0) {
-         delete[] array201->data;
-         array201->data = nullptr;
-         DEBUG_FREE(array201->id);
-         delete array201;
+      array169->refC--;
+      if(array169->refC == 0) {
+         delete[] array169->data;
+         array169->data = nullptr;
+         DEBUG_FREE(array169->id);
+         delete array169;
       }
    }
    Array_param params0;
    params0.size = 0;
    Array* data_params0[0];
    params0.data = data_params0;
-   Array* array206 = func9(&params0, get_path(), loopsFactor);
-   DEBUG_RETURN(array206->id);
+   Array* array174 = func9(&params0, get_path(), loopsFactor);
+   DEBUG_RETURN(array174->id);
    if(params0.size > 0) {
-   	params0.data = nullptr;
+   	 params0.data.clear();
    }
-   return array206;
+   return array174;
 }
 

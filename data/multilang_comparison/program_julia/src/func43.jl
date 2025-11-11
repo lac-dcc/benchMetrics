@@ -1,17 +1,14 @@
 include("program_julia_head.jl")
 function func43(vars::JArray_param, loopsFactor::Int)::JArray
    pCounter = length(vars.data)
-   loopLimit11 = (50)/4 + 1
-   for i in 1:loopLimit11 
-   end
-   array30 = nothing
+   array19 = nothing
    if pCounter > 1
-       array30 = vars.data[pCounter]
+       array19 = vars.data[pCounter]
        pCounter -= 1
-       array30.refC += 1
+       array19.refC += 1
    else
-       array30 = JArray(zeros(Int, 286), 286, 1, 30)
+       array19 = JArray(zeros(Int, 814), 814, 1, 19)
    end
-   return array30;
+   return array19;
 end
 

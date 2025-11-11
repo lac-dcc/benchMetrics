@@ -14,16 +14,16 @@ function func10(vars::JArray_param, PATH0::UInt64, loopsFactor::Int)::JArray
    else 
       params0 = JArray_param{Int}()
       params0.size = 0
-      array96 = func12(params0, get_path(), loopsFactor);
-      array96.refC -= 1
-      if array96.refC == 0
-          empty!(array96.data)
-          array96 = nothing
+      array65 = func12(params0, get_path(), loopsFactor);
+      array65.refC -= 1
+      if array65.refC == 0
+          empty!(array65.data)
+          array65 = nothing
       end
    end
    params0 = JArray_param{Int}()
    params0.size = 0
-   array133 = func13(params0, get_path(), loopsFactor);
-   return array133;
+   array101 = func13(params0, get_path(), loopsFactor);
+   return array101;
 end
 

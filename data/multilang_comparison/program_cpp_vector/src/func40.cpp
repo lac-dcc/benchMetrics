@@ -1,36 +1,27 @@
 #include "program_cpp_vector.hpp" 
 Array* func40(Array_param* vars, int loopsFactor) {
    size_t pCounter = vars->size;
-   Array* array17;
+   Array* array10;
    if (pCounter > 0) {
-      array17 = vars->data.at(--pCounter);
-      array17->refC++;
-      DEBUG_COPY(array17->id);
+      array10 = vars->data.at(--pCounter);
+      array10->refC++;
+      DEBUG_COPY(array10->id);
    } else {
-      array17 = new Array();
-      array17->size = 84;
-      array17->refC = 1;
-      array17->id = 17;
-      array17->data = std::vector<unsigned int>(array17->size, 0);
-      DEBUG_NEW(array17->id);
+      array10 = new Array();
+      array10->size = 42;
+      array10->refC = 1;
+      array10->id = 10;
+      array10->data = std::vector<unsigned int>(array10->size, 0);
+      DEBUG_NEW(array10->id);
    }
-   unsigned int loop7 = 0;
-   unsigned int loopLimit7 = (50)/5 + 1;
-   for(; loop7 < loopLimit7; loop7++) {
-      for (int i = 0; i < array17->size; i++) {
-          if (array17->data.at(i) == 36) {
-              return array17;
-          }
-      }
+   for (int i = 0; i < array10->size; i++) {
+       array10->data.at(i)--;
    }
-   for (int i = 0; i < array17->size; i++) {
-       array17->data.at(i)--;
-   }
-   for (int i = 0; i < array17->size; i++) {
-       if (array17->data.at(i) == 29) {
-           return array17;
+   for (int i = 0; i < array10->size; i++) {
+       if (array10->data.at(i) == 21) {
+           return array10;
        }
    }
-   return array17;
+   return array10;
 }
 

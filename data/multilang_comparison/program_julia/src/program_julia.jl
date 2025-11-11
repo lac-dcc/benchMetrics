@@ -3,59 +3,40 @@ include("func10.jl")
 include("func11.jl")
 include("func28.jl")
 include("func29.jl")
-include("func46.jl")
-include("func47.jl")
-include("func48.jl")
-include("func49.jl")
 include("func40.jl")
 include("func41.jl")
-include("func46.jl")
-include("func50.jl")
 include("func30.jl")
 include("func42.jl")
 include("func43.jl")
 include("func44.jl")
-include("func50.jl")
 include("func45.jl")
-include("func51.jl")
 include("func34.jl")
-include("func50.jl")
-include("func51.jl")
 include("func31.jl")
 include("func35.jl")
 include("func42.jl")
-include("func46.jl")
 include("func40.jl")
 include("func22.jl")
 include("func42.jl")
 include("func34.jl")
 include("func35.jl")
-include("func46.jl")
 include("func40.jl")
 include("func23.jl")
 include("func28.jl")
 include("func36.jl")
 include("func37.jl")
-include("func50.jl")
-include("func51.jl")
 include("func38.jl")
-include("func46.jl")
 include("func40.jl")
 include("func39.jl")
 include("func41.jl")
-include("func50.jl")
 include("func32.jl")
-include("func46.jl")
 include("func40.jl")
 include("func41.jl")
-include("func50.jl")
 include("func12.jl")
 include("func24.jl")
 include("func25.jl")
 include("func42.jl")
 include("func34.jl")
 include("func35.jl")
-include("func46.jl")
 include("func40.jl")
 include("func26.jl")
 include("func36.jl")
@@ -157,20 +138,20 @@ function main()
       params0 = JArray_param{Int}()
       params0.size = 0
       array0 = func0(params0, get_path(), loopsFactor);
-      array188 = nothing
-      array188 = JArray(zeros(Int, 493),493, 1, 188)
+      array156 = nothing
+      array156 = JArray(zeros(Int, 42),42, 1, 156)
       if (get_path() & 1) != 0
          if (get_path() & 1) != 0
-            array189 = nothing
-            array189 = JArray(zeros(Int, 358),358, 1, 189)
-            loopLimit55 = (50)/2 + 1
-            for i in 1:loopLimit55 
-               for i in 0:(array188.size-1) 
-                  array188.data[i+1] -= 1
+            array157 = nothing
+            array157 = JArray(zeros(Int, 360),360, 1, 157)
+            loopLimit46 = (50)/2 + 1
+            for i in 1:loopLimit46 
+               for i in 0:(array0.size-1) 
+                  array0.data[i+1] -= 1
                end
-               for i in 1:array188.size
-                   if array188.data[i] == 17
-                           array188.data[i] += 17
+               for i in 1:array0.size
+                   if array0.data[i] == 61
+                           array0.data[i] += 61
                   end
                end
             end
@@ -178,20 +159,20 @@ function main()
             params1.size = 3
             push!(params1.data, array0)
             params1.size += 1
-            push!(params1.data, array188)
+            push!(params1.data, array156)
             params1.size += 1
-            push!(params1.data, array189)
+            push!(params1.data, array157)
             params1.size += 1
-            array190 = func6(params1, get_path(), loopsFactor);
-            array190.refC -= 1
-            if array190.refC == 0
-                empty!(array190.data)
-                array190 = nothing
+            array158 = func6(params1, get_path(), loopsFactor);
+            array158.refC -= 1
+            if array158.refC == 0
+                empty!(array158.data)
+                array158 = nothing
             end
-            array189.refC -= 1
-            if array189.refC == 0
-                empty!(array189.data)
-                array189 = nothing
+            array157.refC -= 1
+            if array157.refC == 0
+                empty!(array157.data)
+                array157 = nothing
             end
          
          else 
@@ -199,13 +180,13 @@ function main()
             params1.size = 2
             push!(params1.data, array0)
             params1.size += 1
-            push!(params1.data, array188)
+            push!(params1.data, array156)
             params1.size += 1
-            array214 = func2(params1, get_path(), loopsFactor);
-            array214.refC -= 1
-            if array214.refC == 0
-                empty!(array214.data)
-                array214 = nothing
+            array182 = func2(params1, get_path(), loopsFactor);
+            array182.refC -= 1
+            if array182.refC == 0
+                empty!(array182.data)
+                array182 = nothing
             end
          end
       
@@ -214,19 +195,19 @@ function main()
          params1.size = 2
          push!(params1.data, array0)
          params1.size += 1
-         push!(params1.data, array188)
+         push!(params1.data, array156)
          params1.size += 1
-         array224 = func1(params1, get_path(), loopsFactor);
-         array224.refC -= 1
-         if array224.refC == 0
-             empty!(array224.data)
-             array224 = nothing
+         array192 = func1(params1, get_path(), loopsFactor);
+         array192.refC -= 1
+         if array192.refC == 0
+             empty!(array192.data)
+             array192 = nothing
          end
       end
-      array188.refC -= 1
-      if array188.refC == 0
-          empty!(array188.data)
-          array188 = nothing
+      array156.refC -= 1
+      if array156.refC == 0
+          empty!(array156.data)
+          array156 = nothing
       end
       array0.refC -= 1
       if array0.refC == 0

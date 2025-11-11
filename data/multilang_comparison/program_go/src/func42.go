@@ -8,34 +8,34 @@ func Func42(vars *ArrayParam, PATH0 uint64 , loopsFactor int) *Array{
       var params0 ArrayParam
       params0.Size = 0
       params0.Data = make([]*Array, params0.Size)
-      var array29 *Array = Func43(&params0, loopsFactor);
+      var array18 *Array = Func43(&params0, loopsFactor);
       params0.Data = nil
       params0.Size = 0
-      array29.RefC--
-      if array29.RefC == 0 {
-          array29.Data = nil
-          array29 = nil
+      array18.RefC--
+      if array18.RefC == 0 {
+          array18.Data = nil
+          array18 = nil
       }
    
    } else {
       var params0 ArrayParam
       params0.Size = 0
       params0.Data = make([]*Array, params0.Size)
-      var array31 *Array = Func44(&params0, getPath(), loopsFactor);
+      var array20 *Array = Func44(&params0, loopsFactor);
       params0.Data = nil
       params0.Size = 0
-      array31.RefC--
-      if array31.RefC == 0 {
-          array31.Data = nil
-          array31 = nil
+      array20.RefC--
+      if array20.RefC == 0 {
+          array20.Data = nil
+          array20 = nil
       }
    }
    var params0 ArrayParam
    params0.Size = 0
    params0.Data = make([]*Array, params0.Size)
-   var array35 *Array = Func45(&params0, loopsFactor);
+   var array22 *Array = Func45(&params0, loopsFactor);
    params0.Data = nil
    params0.Size = 0
-   return array35;
+   return array22;
 }
 

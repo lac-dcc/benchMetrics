@@ -1,35 +1,35 @@
 include("program_julia_head.jl")
 function func17(vars::JArray_param, loopsFactor::Int)::JArray
    pCounter = length(vars.data)
-   array136 = nothing
+   array104 = nothing
    if pCounter > 1
-       array136 = vars.data[pCounter]
+       array104 = vars.data[pCounter]
        pCounter -= 1
-       array136.refC += 1
+       array104.refC += 1
    else
-       array136 = JArray(zeros(Int, 436), 436, 1, 136)
+       array104 = JArray(zeros(Int, 269), 269, 1, 104)
    end
    params0 = JArray_param{Int}()
    params0.size = 1
-   push!(params0.data, array136)
+   push!(params0.data, array104)
    params0.size += 1
-   array137 = func24(params0, get_path(), loopsFactor);
-   loopLimit40 = (50)/3 + 1
-   for i in 1:loopLimit40 
-      for i in 0:(array137.size-1) 
-         array137.data[i+1] += 1
+   array105 = func24(params0, get_path(), loopsFactor);
+   loopLimit31 = (50)/3 + 1
+   for i in 1:loopLimit31 
+      for i in 0:(array104.size-1) 
+         array104.data[i+1] += 1
       end
    end
-   for i in 1:array136.size
-       if array136.data[i] == 4
-               return array136
+   for i in 1:array104.size
+       if array104.data[i] == 92
+               return array104
       end
    end
-   array137.refC -= 1
-   if array137.refC == 0
-       empty!(array137.data)
-       array137 = nothing
+   array105.refC -= 1
+   if array105.refC == 0
+       empty!(array105.data)
+       array105 = nothing
    end
-   return array136;
+   return array104;
 end
 

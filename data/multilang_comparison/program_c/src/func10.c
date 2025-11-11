@@ -19,22 +19,22 @@ array_t* func10(array_t_param* vars, const unsigned long PATH0, int loopsFactor)
       array_t_param params0;
       params0.size = 0;
       params0.data = (array_t**)malloc(params0.size*sizeof(array_t*));
-      array_t* array96 = func12(&params0, get_path(), loopsFactor);
-      DEBUG_RETURN(array96->id);
+      array_t* array65 = func12(&params0, get_path(), loopsFactor);
+      DEBUG_RETURN(array65->id);
       free(params0.data);
-      array96->refC--;
-      if(array96->refC == 0) {
-         free(array96->data);
-         free(array96);
-         DEBUG_FREE(array96->id);
+      array65->refC--;
+      if(array65->refC == 0) {
+         free(array65->data);
+         free(array65);
+         DEBUG_FREE(array65->id);
       }
    }
    array_t_param params0;
    params0.size = 0;
    params0.data = (array_t**)malloc(params0.size*sizeof(array_t*));
-   array_t* array133 = func13(&params0, get_path(), loopsFactor);
-   DEBUG_RETURN(array133->id);
+   array_t* array101 = func13(&params0, get_path(), loopsFactor);
+   DEBUG_RETURN(array101->id);
    free(params0.data);
-   return array133;
+   return array101;
 }
 

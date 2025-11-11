@@ -2,28 +2,28 @@
 Array* func20(Array_param* vars, const unsigned long PATH0, int loopsFactor) {
    size_t pCounter = vars->size;
    if(PATH0 & 1) {
-      Array* array168;
+      Array* array136;
       if (pCounter > 0) {
-         array168 = vars->data[--pCounter];
-         array168->refC++;
-         DEBUG_COPY(array168->id);
+         array136 = vars->data[--pCounter];
+         array136->refC++;
+         DEBUG_COPY(array136->id);
       } else {
-         array168 = new Array();
-         array168->size = 631;
-         array168->refC = 1;
-         array168->id = 168;
-         array168->data = new unsigned int[array168->size]();
-         DEBUG_NEW(array168->id);
+         array136 = new Array();
+         array136->size = 460;
+         array136->refC = 1;
+         array136->id = 136;
+         array136->data = new unsigned int[array136->size]();
+         DEBUG_NEW(array136->id);
       }
-      unsigned int loop50 = 0;
-      unsigned int loopLimit50 = (50)/3 + 1;
-      for(; loop50 < loopLimit50; loop50++) {
-         for (int i = 0; i < array168->size; i++) {
-             array168->data[i]--;
+      unsigned int loop41 = 0;
+      unsigned int loopLimit41 = (50)/3 + 1;
+      for(; loop41 < loopLimit41; loop41++) {
+         for (int i = 0; i < array136->size; i++) {
+             array136->data[i]--;
          }
-         for (int i = 0; i < array168->size; i++) {
-             if (array168->data[i] == 27) {
-                 return array168;
+         for (int i = 0; i < array136->size; i++) {
+             if (array136->data[i] == 60) {
+                 return array136;
              }
          }
       }
@@ -31,25 +31,25 @@ Array* func20(Array_param* vars, const unsigned long PATH0, int loopsFactor) {
       params0.size = 1;
       Array* data_params0[1];
       params0.data = data_params0;
-      params0.data[0] = array168;
-      Array* array169 = func28(&params0, get_path(), loopsFactor);
-      DEBUG_RETURN(array169->id);
+      params0.data[0] = array136;
+      Array* array137 = func28(&params0, get_path(), loopsFactor);
+      DEBUG_RETURN(array137->id);
       if(params0.size > 0) {
-      	params0.data = nullptr;
+      	 params0.data.clear();
       }
-      array169->refC--;
-      if(array169->refC == 0) {
-         delete[] array169->data;
-         array169->data = nullptr;
-         DEBUG_FREE(array169->id);
-         delete array169;
+      array137->refC--;
+      if(array137->refC == 0) {
+         delete[] array137->data;
+         array137->data = nullptr;
+         DEBUG_FREE(array137->id);
+         delete array137;
       }
-      array168->refC--;
-      if(array168->refC == 0) {
-         delete[] array168->data;
-         array168->data = nullptr;
-         DEBUG_FREE(array168->id);
-         delete array168;
+      array136->refC--;
+      if(array136->refC == 0) {
+         delete[] array136->data;
+         array136->data = nullptr;
+         DEBUG_FREE(array136->id);
+         delete array136;
       }
    }
    else {
@@ -57,32 +57,32 @@ Array* func20(Array_param* vars, const unsigned long PATH0, int loopsFactor) {
       params0.size = 0;
       Array* data_params0[0];
       params0.data = data_params0;
-      Array* array170 = func22(&params0, get_path(), loopsFactor);
-      DEBUG_RETURN(array170->id);
+      Array* array138 = func22(&params0, get_path(), loopsFactor);
+      DEBUG_RETURN(array138->id);
       if(params0.size > 0) {
-      	params0.data = nullptr;
+      	 params0.data.clear();
       }
-      array170->refC--;
-      if(array170->refC == 0) {
-         delete[] array170->data;
-         array170->data = nullptr;
-         DEBUG_FREE(array170->id);
-         delete array170;
+      array138->refC--;
+      if(array138->refC == 0) {
+         delete[] array138->data;
+         array138->data = nullptr;
+         DEBUG_FREE(array138->id);
+         delete array138;
       }
    }
-   Array* array171;
+   Array* array139;
    if (pCounter > 0) {
-      array171 = vars->data[--pCounter];
-      array171->refC++;
-      DEBUG_COPY(array171->id);
+      array139 = vars->data[--pCounter];
+      array139->refC++;
+      DEBUG_COPY(array139->id);
    } else {
-      array171 = new Array();
-      array171->size = 512;
-      array171->refC = 1;
-      array171->id = 171;
-      array171->data = new unsigned int[array171->size]();
-      DEBUG_NEW(array171->id);
+      array139 = new Array();
+      array139->size = 748;
+      array139->refC = 1;
+      array139->id = 139;
+      array139->data = new unsigned int[array139->size]();
+      DEBUG_NEW(array139->id);
    }
-   return array171;
+   return array139;
 }
 

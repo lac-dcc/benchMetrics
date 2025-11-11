@@ -1,52 +1,52 @@
 #include "program_cpp_vector.hpp" 
 Array* func9(Array_param* vars, const unsigned long PATH0, int loopsFactor) {
    size_t pCounter = vars->size;
-   Array* array207;
+   Array* array175;
    if (pCounter > 0) {
-      array207 = vars->data.at(--pCounter);
-      array207->refC++;
-      DEBUG_COPY(array207->id);
+      array175 = vars->data.at(--pCounter);
+      array175->refC++;
+      DEBUG_COPY(array175->id);
    } else {
-      array207 = new Array();
-      array207->size = 176;
-      array207->refC = 1;
-      array207->id = 207;
-      array207->data = std::vector<unsigned int>(array207->size, 0);
-      DEBUG_NEW(array207->id);
+      array175 = new Array();
+      array175->size = 641;
+      array175->refC = 1;
+      array175->id = 175;
+      array175->data = std::vector<unsigned int>(array175->size, 0);
+      DEBUG_NEW(array175->id);
    }
    Array_param params0;
    params0.size = 1;
    std::vector<Array*> data_params0(1);
    params0.data = data_params0;
-   params0.data.at(0) = array207;
-   Array* array208 = func15(&params0, loopsFactor);
-   DEBUG_RETURN(array208->id);
-   if(params0.data.size() > 0) {
-   	params0.data.clear();
+   params0.data.at(0) = array175;
+   Array* array176 = func15(&params0, loopsFactor);
+   DEBUG_RETURN(array176->id);
+   if(params0.size > 0) {
+   	 params0.data.clear();
    }
    if(PATH0 & 1) {
-      Array* array211;
+      Array* array179;
       if (pCounter > 0) {
-         array211 = vars->data.at(--pCounter);
-         array211->refC++;
-         DEBUG_COPY(array211->id);
+         array179 = vars->data.at(--pCounter);
+         array179->refC++;
+         DEBUG_COPY(array179->id);
       } else {
-         array211 = new Array();
-         array211->size = 818;
-         array211->refC = 1;
-         array211->id = 211;
-         array211->data = std::vector<unsigned int>(array211->size, 0);
-         DEBUG_NEW(array211->id);
+         array179 = new Array();
+         array179->size = 260;
+         array179->refC = 1;
+         array179->id = 179;
+         array179->data = std::vector<unsigned int>(array179->size, 0);
+         DEBUG_NEW(array179->id);
       }
-      unsigned int loop61 = 0;
-      unsigned int loopLimit61 = (50)/2 + 1;
-      for(; loop61 < loopLimit61; loop61++) {
-         for (int i = 0; i < array211->size; i++) {
-             array211->data.at(i)--;
+      unsigned int loop52 = 0;
+      unsigned int loopLimit52 = (50)/2 + 1;
+      for(; loop52 < loopLimit52; loop52++) {
+         for (int i = 0; i < array176->size; i++) {
+             array176->data.at(i)--;
          }
-         for (int i = 0; i < array207->size; i++) {
-             if (array207->data.at(i) == 49) {
-                 return array207;
+         for (int i = 0; i < array179->size; i++) {
+             if (array179->data.at(i) == 5) {
+                 return array179;
              }
          }
       }
@@ -54,25 +54,25 @@ Array* func9(Array_param* vars, const unsigned long PATH0, int loopsFactor) {
       params1.size = 3;
       std::vector<Array*> data_params1(3);
       params1.data = data_params1;
-      params1.data.at(0) = array207;
-      params1.data.at(1) = array208;
-      params1.data.at(2) = array211;
-      Array* array212 = func24(&params1, get_path(), loopsFactor);
-      DEBUG_RETURN(array212->id);
-      if(params1.data.size() > 0) {
-      	params1.data.clear();
+      params1.data.at(0) = array175;
+      params1.data.at(1) = array176;
+      params1.data.at(2) = array179;
+      Array* array180 = func24(&params1, get_path(), loopsFactor);
+      DEBUG_RETURN(array180->id);
+      if(params1.size > 0) {
+      	 params1.data.clear();
       }
-      array212->refC--;
-      if(array212->refC == 0) {
-         array212->data.clear();
-         delete array212;
-         DEBUG_FREE(array212->id);
+      array180->refC--;
+      if(array180->refC == 0) {
+         array180->data.clear();
+         delete array180;
+         DEBUG_FREE(array180->id);
       }
-      array211->refC--;
-      if(array211->refC == 0) {
-         array211->data.clear();
-         delete array211;
-         DEBUG_FREE(array211->id);
+      array179->refC--;
+      if(array179->refC == 0) {
+         array179->data.clear();
+         delete array179;
+         DEBUG_FREE(array179->id);
       }
    }
    else {
@@ -80,26 +80,26 @@ Array* func9(Array_param* vars, const unsigned long PATH0, int loopsFactor) {
       params1.size = 2;
       std::vector<Array*> data_params1(2);
       params1.data = data_params1;
-      params1.data.at(0) = array207;
-      params1.data.at(1) = array208;
-      Array* array213 = func16(&params1, get_path(), loopsFactor);
-      DEBUG_RETURN(array213->id);
-      if(params1.data.size() > 0) {
-      	params1.data.clear();
+      params1.data.at(0) = array175;
+      params1.data.at(1) = array176;
+      Array* array181 = func16(&params1, get_path(), loopsFactor);
+      DEBUG_RETURN(array181->id);
+      if(params1.size > 0) {
+      	 params1.data.clear();
       }
-      array213->refC--;
-      if(array213->refC == 0) {
-         array213->data.clear();
-         delete array213;
-         DEBUG_FREE(array213->id);
+      array181->refC--;
+      if(array181->refC == 0) {
+         array181->data.clear();
+         delete array181;
+         DEBUG_FREE(array181->id);
       }
    }
-   array207->refC--;
-   if(array207->refC == 0) {
-      array207->data.clear();
-      delete array207;
-      DEBUG_FREE(array207->id);
+   array175->refC--;
+   if(array175->refC == 0) {
+      array175->data.clear();
+      delete array175;
+      DEBUG_FREE(array175->id);
    }
-   return array208;
+   return array176;
 }
 

@@ -5,36 +5,36 @@ array_t* func36(array_t_param* vars, const unsigned long PATH0, int loopsFactor)
       array_t_param params0;
       params0.size = 0;
       params0.data = (array_t**)malloc(params0.size*sizeof(array_t*));
-      array_t* array70 = func37(&params0, get_path(), loopsFactor);
-      DEBUG_RETURN(array70->id);
+      array_t* array49 = func37(&params0, loopsFactor);
+      DEBUG_RETURN(array49->id);
       free(params0.data);
-      array70->refC--;
-      if(array70->refC == 0) {
-         free(array70->data);
-         free(array70);
-         DEBUG_FREE(array70->id);
+      array49->refC--;
+      if(array49->refC == 0) {
+         free(array49->data);
+         free(array49);
+         DEBUG_FREE(array49->id);
       }
    }
    else {
       array_t_param params0;
       params0.size = 0;
       params0.data = (array_t**)malloc(params0.size*sizeof(array_t*));
-      array_t* array76 = func38(&params0, get_path(), loopsFactor);
-      DEBUG_RETURN(array76->id);
+      array_t* array51 = func38(&params0, get_path(), loopsFactor);
+      DEBUG_RETURN(array51->id);
       free(params0.data);
-      array76->refC--;
-      if(array76->refC == 0) {
-         free(array76->data);
-         free(array76);
-         DEBUG_FREE(array76->id);
+      array51->refC--;
+      if(array51->refC == 0) {
+         free(array51->data);
+         free(array51);
+         DEBUG_FREE(array51->id);
       }
    }
    array_t_param params0;
    params0.size = 0;
    params0.data = (array_t**)malloc(params0.size*sizeof(array_t*));
-   array_t* array81 = func39(&params0, get_path(), loopsFactor);
-   DEBUG_RETURN(array81->id);
+   array_t* array55 = func39(&params0, loopsFactor);
+   DEBUG_RETURN(array55->id);
    free(params0.data);
-   return array81;
+   return array55;
 }
 

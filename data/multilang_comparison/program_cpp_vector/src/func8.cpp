@@ -2,28 +2,28 @@
 Array* func8(Array_param* vars, const unsigned long PATH0, int loopsFactor) {
    size_t pCounter = vars->size;
    if(PATH0 & 1) {
-      Array* array202;
+      Array* array170;
       if (pCounter > 0) {
-         array202 = vars->data.at(--pCounter);
-         array202->refC++;
-         DEBUG_COPY(array202->id);
+         array170 = vars->data.at(--pCounter);
+         array170->refC++;
+         DEBUG_COPY(array170->id);
       } else {
-         array202 = new Array();
-         array202->size = 796;
-         array202->refC = 1;
-         array202->id = 202;
-         array202->data = std::vector<unsigned int>(array202->size, 0);
-         DEBUG_NEW(array202->id);
+         array170 = new Array();
+         array170->size = 627;
+         array170->refC = 1;
+         array170->id = 170;
+         array170->data = std::vector<unsigned int>(array170->size, 0);
+         DEBUG_NEW(array170->id);
       }
-      unsigned int loop59 = 0;
-      unsigned int loopLimit59 = (50)/2 + 1;
-      for(; loop59 < loopLimit59; loop59++) {
-         for (int i = 0; i < array202->size; i++) {
-             array202->data.at(i)--;
+      unsigned int loop50 = 0;
+      unsigned int loopLimit50 = (50)/2 + 1;
+      for(; loop50 < loopLimit50; loop50++) {
+         for (int i = 0; i < array170->size; i++) {
+             array170->data.at(i)--;
          }
-         for (int i = 0; i < array202->size; i++) {
-             if (array202->data.at(i) == 80) {
-                 return array202;
+         for (int i = 0; i < array170->size; i++) {
+             if (array170->data.at(i) == 14) {
+                 return array170;
              }
          }
       }
@@ -31,23 +31,23 @@ Array* func8(Array_param* vars, const unsigned long PATH0, int loopsFactor) {
       params0.size = 1;
       std::vector<Array*> data_params0(1);
       params0.data = data_params0;
-      params0.data.at(0) = array202;
-      Array* array203 = func18(&params0, get_path(), loopsFactor);
-      DEBUG_RETURN(array203->id);
-      if(params0.data.size() > 0) {
-      	params0.data.clear();
+      params0.data.at(0) = array170;
+      Array* array171 = func18(&params0, get_path(), loopsFactor);
+      DEBUG_RETURN(array171->id);
+      if(params0.size > 0) {
+      	 params0.data.clear();
       }
-      array203->refC--;
-      if(array203->refC == 0) {
-         array203->data.clear();
-         delete array203;
-         DEBUG_FREE(array203->id);
+      array171->refC--;
+      if(array171->refC == 0) {
+         array171->data.clear();
+         delete array171;
+         DEBUG_FREE(array171->id);
       }
-      array202->refC--;
-      if(array202->refC == 0) {
-         array202->data.clear();
-         delete array202;
-         DEBUG_FREE(array202->id);
+      array170->refC--;
+      if(array170->refC == 0) {
+         array170->data.clear();
+         delete array170;
+         DEBUG_FREE(array170->id);
       }
    }
    else {
@@ -55,31 +55,31 @@ Array* func8(Array_param* vars, const unsigned long PATH0, int loopsFactor) {
       params0.size = 0;
       std::vector<Array*> data_params0(0);
       params0.data = data_params0;
-      Array* array204 = func14(&params0, get_path(), loopsFactor);
-      DEBUG_RETURN(array204->id);
-      if(params0.data.size() > 0) {
-      	params0.data.clear();
+      Array* array172 = func14(&params0, get_path(), loopsFactor);
+      DEBUG_RETURN(array172->id);
+      if(params0.size > 0) {
+      	 params0.data.clear();
       }
-      array204->refC--;
-      if(array204->refC == 0) {
-         array204->data.clear();
-         delete array204;
-         DEBUG_FREE(array204->id);
+      array172->refC--;
+      if(array172->refC == 0) {
+         array172->data.clear();
+         delete array172;
+         DEBUG_FREE(array172->id);
       }
    }
-   Array* array205;
+   Array* array173;
    if (pCounter > 0) {
-      array205 = vars->data.at(--pCounter);
-      array205->refC++;
-      DEBUG_COPY(array205->id);
+      array173 = vars->data.at(--pCounter);
+      array173->refC++;
+      DEBUG_COPY(array173->id);
    } else {
-      array205 = new Array();
-      array205->size = 812;
-      array205->refC = 1;
-      array205->id = 205;
-      array205->data = std::vector<unsigned int>(array205->size, 0);
-      DEBUG_NEW(array205->id);
+      array173 = new Array();
+      array173->size = 479;
+      array173->refC = 1;
+      array173->id = 173;
+      array173->data = std::vector<unsigned int>(array173->size, 0);
+      DEBUG_NEW(array173->id);
    }
-   return array205;
+   return array173;
 }
 

@@ -41,31 +41,31 @@ func main() {
       var array0 *Array = Func0(&params0, getPath(), loopsFactor);
       params0.Data = nil
       params0.Size = 0
-      var array188 *Array
-      array188 = &Array{
-          Size: 493,
+      var array156 *Array
+      array156 = &Array{
+          Size: 42,
           RefC: 1,
-          Id: 188,
-          Data: make([]uint32, 493),
+          Id: 156,
+          Data: make([]uint32, 42),
       }
       if (getPath() & 1) != 0 {
          if (getPath() & 1) != 0 {
-            var array189 *Array
-            array189 = &Array{
-                Size: 358,
+            var array157 *Array
+            array157 = &Array{
+                Size: 360,
                 RefC: 1,
-                Id: 189,
-                Data: make([]uint32, 358),
+                Id: 157,
+                Data: make([]uint32, 360),
             }
-            var loop55 int = 0;
-            var loopLimit55 int = (50)/2 + 1;
-            for ; loop55 < loopLimit55; loop55++ {
-               for i := 0; i < array188.Size; i++ {
-                   array188.Data[i]--
+            var loop46 int = 0;
+            var loopLimit46 int = (50)/2 + 1;
+            for ; loop46 < loopLimit46; loop46++ {
+               for i := 0; i < array0.Size; i++ {
+                   array0.Data[i]--
                }
-               for i := 0; i < array188.Size; i++ {
-                   if array188.Data[i] == 17 {
-                       array188.Data[i] += 17
+               for i := 0; i < array0.Size; i++ {
+                   if array0.Data[i] == 61 {
+                       array0.Data[i] += 61
                    }
                }
             }
@@ -73,20 +73,20 @@ func main() {
             params1.Size = 3
             params1.Data = make([]*Array, params1.Size)
             params1.Data[0] = array0
-            params1.Data[1] = array188
-            params1.Data[2] = array189
-            var array190 *Array = Func6(&params1, getPath(), loopsFactor);
+            params1.Data[1] = array156
+            params1.Data[2] = array157
+            var array158 *Array = Func6(&params1, getPath(), loopsFactor);
             params1.Data = nil
             params1.Size = 0
-            array190.RefC--
-            if array190.RefC == 0 {
-                array190.Data = nil
-                array190 = nil
+            array158.RefC--
+            if array158.RefC == 0 {
+                array158.Data = nil
+                array158 = nil
             }
-            array189.RefC--
-            if array189.RefC == 0 {
-                array189.Data = nil
-                array189 = nil
+            array157.RefC--
+            if array157.RefC == 0 {
+                array157.Data = nil
+                array157 = nil
             }
          
          } else {
@@ -94,14 +94,14 @@ func main() {
             params1.Size = 2
             params1.Data = make([]*Array, params1.Size)
             params1.Data[0] = array0
-            params1.Data[1] = array188
-            var array214 *Array = Func2(&params1, getPath(), loopsFactor);
+            params1.Data[1] = array156
+            var array182 *Array = Func2(&params1, getPath(), loopsFactor);
             params1.Data = nil
             params1.Size = 0
-            array214.RefC--
-            if array214.RefC == 0 {
-                array214.Data = nil
-                array214 = nil
+            array182.RefC--
+            if array182.RefC == 0 {
+                array182.Data = nil
+                array182 = nil
             }
          }
       
@@ -110,20 +110,20 @@ func main() {
          params1.Size = 2
          params1.Data = make([]*Array, params1.Size)
          params1.Data[0] = array0
-         params1.Data[1] = array188
-         var array224 *Array = Func1(&params1, getPath(), loopsFactor);
+         params1.Data[1] = array156
+         var array192 *Array = Func1(&params1, getPath(), loopsFactor);
          params1.Data = nil
          params1.Size = 0
-         array224.RefC--
-         if array224.RefC == 0 {
-             array224.Data = nil
-             array224 = nil
+         array192.RefC--
+         if array192.RefC == 0 {
+             array192.Data = nil
+             array192 = nil
          }
       }
-      array188.RefC--
-      if array188.RefC == 0 {
-          array188.Data = nil
-          array188 = nil
+      array156.RefC--
+      if array156.RefC == 0 {
+          array156.Data = nil
+          array156 = nil
       }
       array0.RefC--
       if array0.RefC == 0 {

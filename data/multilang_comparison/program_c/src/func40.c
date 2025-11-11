@@ -1,37 +1,28 @@
 #include "program_c.h" 
 array_t* func40(array_t_param* vars, int loopsFactor) {
    size_t pCounter = vars->size;
-   array_t* array17;
+   array_t* array10;
    if (pCounter > 0) {
-      array17 = vars->data[--pCounter];
-      array17->refC++;
-      DEBUG_COPY(array17->id);
+      array10 = vars->data[--pCounter];
+      array10->refC++;
+      DEBUG_COPY(array10->id);
    } else {
-      array17 = (array_t*)malloc(sizeof(array_t));
-      array17->size = 84;
-      array17->refC = 1;
-      array17->id = 17;
-      array17->data = (unsigned int*)malloc(array17->size*sizeof(unsigned int));
-      memset(array17->data, 0, array17->size*sizeof(unsigned int));
-      DEBUG_NEW(array17->id);
+      array10 = (array_t*)malloc(sizeof(array_t));
+      array10->size = 42;
+      array10->refC = 1;
+      array10->id = 10;
+      array10->data = (unsigned int*)malloc(array10->size*sizeof(unsigned int));
+      memset(array10->data, 0, array10->size*sizeof(unsigned int));
+      DEBUG_NEW(array10->id);
    }
-   unsigned int loop7 = 0;
-   unsigned int loopLimit7 = (rand()%loopsFactor)/5 + 1;
-   for(; loop7 < loopLimit7; loop7++) {
-      for (int i = 0; i < array17->size; i++) {
-         if (array17->data[i] == 36) { 
-            return array17;
-         }
+   for (int i = 0; i < array10->size; i++) {
+      array10->data[i]--;
+   }
+   for (int i = 0; i < array10->size; i++) {
+      if (array10->data[i] == 21) { 
+         return array10;
       }
    }
-   for (int i = 0; i < array17->size; i++) {
-      array17->data[i]--;
-   }
-   for (int i = 0; i < array17->size; i++) {
-      if (array17->data[i] == 29) { 
-         return array17;
-      }
-   }
-   return array17;
+   return array10;
 }
 

@@ -8,8 +8,8 @@ Array* func28(Array_param* vars, const unsigned long PATH0, int loopsFactor) {
       params0.data = data_params0;
       Array* array7 = func29(&params0, get_path(), loopsFactor);
       DEBUG_RETURN(array7->id);
-      if(params0.data.size() > 0) {
-      	params0.data.clear();
+      if(params0.size > 0) {
+      	 params0.data.clear();
       }
       array7->refC--;
       if(array7->refC == 0) {
@@ -23,27 +23,27 @@ Array* func28(Array_param* vars, const unsigned long PATH0, int loopsFactor) {
       params0.size = 0;
       std::vector<Array*> data_params0(0);
       params0.data = data_params0;
-      Array* array26 = func30(&params0, get_path(), loopsFactor);
-      DEBUG_RETURN(array26->id);
-      if(params0.data.size() > 0) {
-      	params0.data.clear();
+      Array* array15 = func30(&params0, get_path(), loopsFactor);
+      DEBUG_RETURN(array15->id);
+      if(params0.size > 0) {
+      	 params0.data.clear();
       }
-      array26->refC--;
-      if(array26->refC == 0) {
-         array26->data.clear();
-         delete array26;
-         DEBUG_FREE(array26->id);
+      array15->refC--;
+      if(array15->refC == 0) {
+         array15->data.clear();
+         delete array15;
+         DEBUG_FREE(array15->id);
       }
    }
    Array_param params0;
    params0.size = 0;
    std::vector<Array*> data_params0(0);
    params0.data = data_params0;
-   Array* array46 = func31(&params0, get_path(), loopsFactor);
-   DEBUG_RETURN(array46->id);
-   if(params0.data.size() > 0) {
-   	params0.data.clear();
+   Array* array27 = func31(&params0, get_path(), loopsFactor);
+   DEBUG_RETURN(array27->id);
+   if(params0.size > 0) {
+   	 params0.data.clear();
    }
-   return array46;
+   return array27;
 }
 

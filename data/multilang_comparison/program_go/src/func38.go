@@ -5,75 +5,63 @@ func Func38(vars *ArrayParam, PATH0 uint64 , loopsFactor int) *Array{
    var pCounter int = vars.Size;
    _ = pCounter
    if (PATH0 & 1) != 0 {
-      var array77 *Array
+      var array52 *Array
       if pCounter > 0 {
-          array77 = vars.Data[pCounter-1]
+          array52 = vars.Data[pCounter-1]
           pCounter--
-          array77.RefC++
+          array52.RefC++
       } else {
-          array77 = &Array{
-              Size: 416,
+          array52 = &Array{
+              Size: 275,
               RefC: 1,
-              Id: 77,
-              Data: make([]uint32, 416),
+              Id: 52,
+              Data: make([]uint32, 275),
           }
       }
-      var loop25 int = 0;
-      var loopLimit25 int = (50)/4 + 1;
-      for ; loop25 < loopLimit25; loop25++ {
-         for i := 0; i < array77.Size; i++ {
-             array77.Data[i]--
+      var loop18 int = 0;
+      var loopLimit18 int = (50)/4 + 1;
+      for ; loop18 < loopLimit18; loop18++ {
+         for i := 0; i < array52.Size; i++ {
+             array52.Data[i]--
          }
-         for i := 0; i < array77.Size; i++ {
-             if array77.Data[i] == 24 {
-                 return array77
+         for i := 0; i < array52.Size; i++ {
+             if array52.Data[i] == 21 {
+                 return array52
              }
          }
       }
-      var params0 ArrayParam
-      params0.Size = 1
-      params0.Data = make([]*Array, params0.Size)
-      params0.Data[0] = array77
-      var array78 *Array = Func46(&params0, getPath(), loopsFactor);
-      params0.Data = nil
-      params0.Size = 0
-      array78.RefC--
-      if array78.RefC == 0 {
-          array78.Data = nil
-          array78 = nil
-      }
-      array77.RefC--
-      if array77.RefC == 0 {
-          array77.Data = nil
-          array77 = nil
+      array52.RefC--
+      if array52.RefC == 0 {
+          array52.Data = nil
+          array52 = nil
       }
    
    } else {
       var params0 ArrayParam
       params0.Size = 0
       params0.Data = make([]*Array, params0.Size)
-      var array79 *Array = Func40(&params0, loopsFactor);
+      var array53 *Array = Func40(&params0, loopsFactor);
       params0.Data = nil
       params0.Size = 0
-      array79.RefC--
-      if array79.RefC == 0 {
-          array79.Data = nil
-          array79 = nil
+      array53.RefC--
+      if array53.RefC == 0 {
+          array53.Data = nil
+          array53 = nil
       }
    }
-   var array80 *Array
+   var array54 *Array
    if pCounter > 0 {
-       array80 = vars.Data[pCounter-1]
+       array54 = vars.Data[pCounter-1]
        pCounter--
-       array80.RefC++
+       array54.RefC++
    } else {
-       array80 = &Array{
-           Size: 36,
+       array54 = &Array{
+           Size: 29,
            RefC: 1,
-           Id: 80,
-           Data: make([]uint32, 36),
+           Id: 54,
+           Data: make([]uint32, 29),
        }
    }
-   return array80;
+   return array54;
 }
 

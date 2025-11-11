@@ -6,16 +6,16 @@ Array* func18(Array_param* vars, const unsigned long PATH0, int loopsFactor) {
       params0.size = 0;
       std::vector<Array*> data_params0(0);
       params0.data = data_params0;
-      Array* array157 = func19(&params0, get_path(), loopsFactor);
-      DEBUG_RETURN(array157->id);
-      if(params0.data.size() > 0) {
-      	params0.data.clear();
+      Array* array125 = func19(&params0, get_path(), loopsFactor);
+      DEBUG_RETURN(array125->id);
+      if(params0.size > 0) {
+      	 params0.data.clear();
       }
-      array157->refC--;
-      if(array157->refC == 0) {
-         array157->data.clear();
-         delete array157;
-         DEBUG_FREE(array157->id);
+      array125->refC--;
+      if(array125->refC == 0) {
+         array125->data.clear();
+         delete array125;
+         DEBUG_FREE(array125->id);
       }
    }
    else {
@@ -23,27 +23,27 @@ Array* func18(Array_param* vars, const unsigned long PATH0, int loopsFactor) {
       params0.size = 0;
       std::vector<Array*> data_params0(0);
       params0.data = data_params0;
-      Array* array167 = func20(&params0, get_path(), loopsFactor);
-      DEBUG_RETURN(array167->id);
-      if(params0.data.size() > 0) {
-      	params0.data.clear();
+      Array* array135 = func20(&params0, get_path(), loopsFactor);
+      DEBUG_RETURN(array135->id);
+      if(params0.size > 0) {
+      	 params0.data.clear();
       }
-      array167->refC--;
-      if(array167->refC == 0) {
-         array167->data.clear();
-         delete array167;
-         DEBUG_FREE(array167->id);
+      array135->refC--;
+      if(array135->refC == 0) {
+         array135->data.clear();
+         delete array135;
+         DEBUG_FREE(array135->id);
       }
    }
    Array_param params0;
    params0.size = 0;
    std::vector<Array*> data_params0(0);
    params0.data = data_params0;
-   Array* array172 = func21(&params0, get_path(), loopsFactor);
-   DEBUG_RETURN(array172->id);
-   if(params0.data.size() > 0) {
-   	params0.data.clear();
+   Array* array140 = func21(&params0, get_path(), loopsFactor);
+   DEBUG_RETURN(array140->id);
+   if(params0.size > 0) {
+   	 params0.data.clear();
    }
-   return array172;
+   return array140;
 }
 

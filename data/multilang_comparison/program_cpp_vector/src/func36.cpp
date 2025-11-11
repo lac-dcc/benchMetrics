@@ -6,16 +6,16 @@ Array* func36(Array_param* vars, const unsigned long PATH0, int loopsFactor) {
       params0.size = 0;
       std::vector<Array*> data_params0(0);
       params0.data = data_params0;
-      Array* array70 = func37(&params0, get_path(), loopsFactor);
-      DEBUG_RETURN(array70->id);
-      if(params0.data.size() > 0) {
-      	params0.data.clear();
+      Array* array49 = func37(&params0, loopsFactor);
+      DEBUG_RETURN(array49->id);
+      if(params0.size > 0) {
+      	 params0.data.clear();
       }
-      array70->refC--;
-      if(array70->refC == 0) {
-         array70->data.clear();
-         delete array70;
-         DEBUG_FREE(array70->id);
+      array49->refC--;
+      if(array49->refC == 0) {
+         array49->data.clear();
+         delete array49;
+         DEBUG_FREE(array49->id);
       }
    }
    else {
@@ -23,27 +23,27 @@ Array* func36(Array_param* vars, const unsigned long PATH0, int loopsFactor) {
       params0.size = 0;
       std::vector<Array*> data_params0(0);
       params0.data = data_params0;
-      Array* array76 = func38(&params0, get_path(), loopsFactor);
-      DEBUG_RETURN(array76->id);
-      if(params0.data.size() > 0) {
-      	params0.data.clear();
+      Array* array51 = func38(&params0, get_path(), loopsFactor);
+      DEBUG_RETURN(array51->id);
+      if(params0.size > 0) {
+      	 params0.data.clear();
       }
-      array76->refC--;
-      if(array76->refC == 0) {
-         array76->data.clear();
-         delete array76;
-         DEBUG_FREE(array76->id);
+      array51->refC--;
+      if(array51->refC == 0) {
+         array51->data.clear();
+         delete array51;
+         DEBUG_FREE(array51->id);
       }
    }
    Array_param params0;
    params0.size = 0;
    std::vector<Array*> data_params0(0);
    params0.data = data_params0;
-   Array* array81 = func39(&params0, get_path(), loopsFactor);
-   DEBUG_RETURN(array81->id);
-   if(params0.data.size() > 0) {
-   	params0.data.clear();
+   Array* array55 = func39(&params0, loopsFactor);
+   DEBUG_RETURN(array55->id);
+   if(params0.size > 0) {
+   	 params0.data.clear();
    }
-   return array81;
+   return array55;
 }
 

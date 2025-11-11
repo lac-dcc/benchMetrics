@@ -21,21 +21,21 @@ func Func10(vars *ArrayParam, PATH0 uint64 , loopsFactor int) *Array{
       var params0 ArrayParam
       params0.Size = 0
       params0.Data = make([]*Array, params0.Size)
-      var array96 *Array = Func12(&params0, getPath(), loopsFactor);
+      var array65 *Array = Func12(&params0, getPath(), loopsFactor);
       params0.Data = nil
       params0.Size = 0
-      array96.RefC--
-      if array96.RefC == 0 {
-          array96.Data = nil
-          array96 = nil
+      array65.RefC--
+      if array65.RefC == 0 {
+          array65.Data = nil
+          array65 = nil
       }
    }
    var params0 ArrayParam
    params0.Size = 0
    params0.Data = make([]*Array, params0.Size)
-   var array133 *Array = Func13(&params0, getPath(), loopsFactor);
+   var array101 *Array = Func13(&params0, getPath(), loopsFactor);
    params0.Data = nil
    params0.Size = 0
-   return array133;
+   return array101;
 }
 

@@ -8,34 +8,34 @@ func Func24(vars *ArrayParam, PATH0 uint64 , loopsFactor int) *Array{
       var params0 ArrayParam
       params0.Size = 0
       params0.Data = make([]*Array, params0.Size)
-      var array99 *Array = Func25(&params0, getPath(), loopsFactor);
+      var array68 *Array = Func25(&params0, getPath(), loopsFactor);
       params0.Data = nil
       params0.Size = 0
-      array99.RefC--
-      if array99.RefC == 0 {
-          array99.Data = nil
-          array99 = nil
+      array68.RefC--
+      if array68.RefC == 0 {
+          array68.Data = nil
+          array68 = nil
       }
    
    } else {
       var params0 ArrayParam
       params0.Size = 0
       params0.Data = make([]*Array, params0.Size)
-      var array109 *Array = Func26(&params0, getPath(), loopsFactor);
+      var array77 *Array = Func26(&params0, getPath(), loopsFactor);
       params0.Data = nil
       params0.Size = 0
-      array109.RefC--
-      if array109.RefC == 0 {
-          array109.Data = nil
-          array109 = nil
+      array77.RefC--
+      if array77.RefC == 0 {
+          array77.Data = nil
+          array77 = nil
       }
    }
    var params0 ArrayParam
    params0.Size = 0
    params0.Data = make([]*Array, params0.Size)
-   var array114 *Array = Func27(&params0, getPath(), loopsFactor);
+   var array82 *Array = Func27(&params0, getPath(), loopsFactor);
    params0.Data = nil
    params0.Size = 0
-   return array114;
+   return array82;
 }
 

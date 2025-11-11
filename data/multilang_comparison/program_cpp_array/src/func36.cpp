@@ -6,17 +6,17 @@ Array* func36(Array_param* vars, const unsigned long PATH0, int loopsFactor) {
       params0.size = 0;
       Array* data_params0[0];
       params0.data = data_params0;
-      Array* array70 = func37(&params0, get_path(), loopsFactor);
-      DEBUG_RETURN(array70->id);
+      Array* array49 = func37(&params0, loopsFactor);
+      DEBUG_RETURN(array49->id);
       if(params0.size > 0) {
-      	params0.data = nullptr;
+      	 params0.data.clear();
       }
-      array70->refC--;
-      if(array70->refC == 0) {
-         delete[] array70->data;
-         array70->data = nullptr;
-         DEBUG_FREE(array70->id);
-         delete array70;
+      array49->refC--;
+      if(array49->refC == 0) {
+         delete[] array49->data;
+         array49->data = nullptr;
+         DEBUG_FREE(array49->id);
+         delete array49;
       }
    }
    else {
@@ -24,28 +24,28 @@ Array* func36(Array_param* vars, const unsigned long PATH0, int loopsFactor) {
       params0.size = 0;
       Array* data_params0[0];
       params0.data = data_params0;
-      Array* array76 = func38(&params0, get_path(), loopsFactor);
-      DEBUG_RETURN(array76->id);
+      Array* array51 = func38(&params0, get_path(), loopsFactor);
+      DEBUG_RETURN(array51->id);
       if(params0.size > 0) {
-      	params0.data = nullptr;
+      	 params0.data.clear();
       }
-      array76->refC--;
-      if(array76->refC == 0) {
-         delete[] array76->data;
-         array76->data = nullptr;
-         DEBUG_FREE(array76->id);
-         delete array76;
+      array51->refC--;
+      if(array51->refC == 0) {
+         delete[] array51->data;
+         array51->data = nullptr;
+         DEBUG_FREE(array51->id);
+         delete array51;
       }
    }
    Array_param params0;
    params0.size = 0;
    Array* data_params0[0];
    params0.data = data_params0;
-   Array* array81 = func39(&params0, get_path(), loopsFactor);
-   DEBUG_RETURN(array81->id);
+   Array* array55 = func39(&params0, loopsFactor);
+   DEBUG_RETURN(array55->id);
    if(params0.size > 0) {
-   	params0.data = nullptr;
+   	 params0.data.clear();
    }
-   return array81;
+   return array55;
 }
 

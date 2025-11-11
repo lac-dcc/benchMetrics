@@ -1,48 +1,48 @@
 #include "program_cpp_array.hpp" 
 Array* func5(Array_param* vars, int loopsFactor) {
    size_t pCounter = vars->size;
-   Array* array153;
+   Array* array121;
    if (pCounter > 0) {
-      array153 = vars->data[--pCounter];
-      array153->refC++;
-      DEBUG_COPY(array153->id);
+      array121 = vars->data[--pCounter];
+      array121->refC++;
+      DEBUG_COPY(array121->id);
    } else {
-      array153 = new Array();
-      array153->size = 829;
-      array153->refC = 1;
-      array153->id = 153;
-      array153->data = new unsigned int[array153->size]();
-      DEBUG_NEW(array153->id);
+      array121 = new Array();
+      array121->size = 506;
+      array121->refC = 1;
+      array121->id = 121;
+      array121->data = new unsigned int[array121->size]();
+      DEBUG_NEW(array121->id);
    }
    Array_param params0;
    params0.size = 1;
    Array* data_params0[1];
    params0.data = data_params0;
-   params0.data[0] = array153;
-   Array* array154 = func10(&params0, get_path(), loopsFactor);
-   DEBUG_RETURN(array154->id);
+   params0.data[0] = array121;
+   Array* array122 = func10(&params0, get_path(), loopsFactor);
+   DEBUG_RETURN(array122->id);
    if(params0.size > 0) {
-   	params0.data = nullptr;
+   	 params0.data.clear();
    }
-   unsigned int loop45 = 0;
-   unsigned int loopLimit45 = (50)/3 + 1;
-   for(; loop45 < loopLimit45; loop45++) {
-      for (int i = 0; i < array153->size; i++) {
-         array153->data[i]++;
+   unsigned int loop36 = 0;
+   unsigned int loopLimit36 = (50)/3 + 1;
+   for(; loop36 < loopLimit36; loop36++) {
+      for (int i = 0; i < array121->size; i++) {
+         array121->data[i]++;
       }
    }
-   for (int i = 0; i < array154->size; i++) {
-       if (array154->data[i] == 69) {
-           return array154;
+   for (int i = 0; i < array121->size; i++) {
+       if (array121->data[i] == 28) {
+           return array121;
        }
    }
-   array154->refC--;
-   if(array154->refC == 0) {
-      delete[] array154->data;
-      array154->data = nullptr;
-      DEBUG_FREE(array154->id);
-      delete array154;
+   array121->refC--;
+   if(array121->refC == 0) {
+      delete[] array121->data;
+      array121->data = nullptr;
+      DEBUG_FREE(array121->id);
+      delete array121;
    }
-   return array153;
+   return array122;
 }
 

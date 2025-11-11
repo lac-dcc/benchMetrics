@@ -1,23 +1,19 @@
 #include "program_cpp_vector.hpp" 
 Array* func43(Array_param* vars, int loopsFactor) {
    size_t pCounter = vars->size;
-   unsigned int loop11 = 0;
-   unsigned int loopLimit11 = (50)/4 + 1;
-   for(; loop11 < loopLimit11; loop11++) {
-   }
-   Array* array30;
+   Array* array19;
    if (pCounter > 0) {
-      array30 = vars->data.at(--pCounter);
-      array30->refC++;
-      DEBUG_COPY(array30->id);
+      array19 = vars->data.at(--pCounter);
+      array19->refC++;
+      DEBUG_COPY(array19->id);
    } else {
-      array30 = new Array();
-      array30->size = 286;
-      array30->refC = 1;
-      array30->id = 30;
-      array30->data = std::vector<unsigned int>(array30->size, 0);
-      DEBUG_NEW(array30->id);
+      array19 = new Array();
+      array19->size = 814;
+      array19->refC = 1;
+      array19->id = 19;
+      array19->data = std::vector<unsigned int>(array19->size, 0);
+      DEBUG_NEW(array19->id);
    }
-   return array30;
+   return array19;
 }
 

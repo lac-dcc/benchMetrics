@@ -4,43 +4,31 @@ var _ = rand.Intn
 func Func41(vars *ArrayParam, loopsFactor int) *Array{
    var pCounter int = vars.Size;
    _ = pCounter
-   var array20 *Array
+   var array13 *Array
    if pCounter > 0 {
-       array20 = vars.Data[pCounter-1]
+       array13 = vars.Data[pCounter-1]
        pCounter--
-       array20.RefC++
+       array13.RefC++
    } else {
-       array20 = &Array{
-           Size: 814,
+       array13 = &Array{
+           Size: 370,
            RefC: 1,
-           Id: 20,
-           Data: make([]uint32, 814),
+           Id: 13,
+           Data: make([]uint32, 370),
        }
    }
-   var params0 ArrayParam
-   params0.Size = 1
-   params0.Data = make([]*Array, params0.Size)
-   params0.Data[0] = array20
-   var array21 *Array = Func46(&params0, getPath(), loopsFactor);
-   params0.Data = nil
-   params0.Size = 0
-   var loop8 int = 0;
-   var loopLimit8 int = (50)/5 + 1;
-   for ; loop8 < loopLimit8; loop8++ {
-      for i := 0; i < array20.Size; i++ {
-          array20.Data[i]++
+   var loop7 int = 0;
+   var loopLimit7 int = (50)/5 + 1;
+   for ; loop7 < loopLimit7; loop7++ {
+      for i := 0; i < array13.Size; i++ {
+          array13.Data[i]++
       }
    }
-   for i := 0; i < array21.Size; i++ {
-       if array21.Data[i] == 50 {
-           return array21
+   for i := 0; i < array13.Size; i++ {
+       if array13.Data[i] == 91 {
+           return array13
        }
    }
-   array20.RefC--
-   if array20.RefC == 0 {
-       array20.Data = nil
-       array20 = nil
-   }
-   return array21;
+   return array13;
 }
 

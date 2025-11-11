@@ -1,163 +1,147 @@
 include("program_julia_head.jl")
 function func22(vars::JArray_param, PATH0::UInt64, loopsFactor::Int)::JArray
    pCounter = length(vars.data)
-   array55 = nothing
+   array35 = nothing
    if pCounter > 1
-       array55 = vars.data[pCounter]
+       array35 = vars.data[pCounter]
        pCounter -= 1
-       array55.refC += 1
+       array35.refC += 1
    else
-       array55 = JArray(zeros(Int, 143), 143, 1, 55)
+       array35 = JArray(zeros(Int, 567), 567, 1, 35)
    end
-   loopLimit18 = (50)/4 + 1
-   for i in 1:loopLimit18 
+   loopLimit12 = (50)/4 + 1
+   for i in 1:loopLimit12 
       if (PATH0 & 1) != 0
-         array56 = nothing
+         array36 = nothing
          if pCounter > 1
-             array56 = vars.data[pCounter]
+             array36 = vars.data[pCounter]
              pCounter -= 1
-             array56.refC += 1
+             array36.refC += 1
          else
-             array56 = JArray(zeros(Int, 11), 11, 1, 56)
+             array36 = JArray(zeros(Int, 856), 856, 1, 36)
          end
-         loopLimit19 = (50)/5 + 1
-         for i in 1:loopLimit19 
-            for i in 0:(array55.size-1) 
-               array55.data[i+1] -= 1
+         loopLimit13 = (50)/5 + 1
+         for i in 1:loopLimit13 
+            for i in 0:(array36.size-1) 
+               array36.data[i+1] -= 1
             end
-            for i in 1:array56.size
-                if array56.data[i] == 76
-                        return array56
+            for i in 1:array36.size
+                if array36.data[i] == 86
+                        return array36
                end
             end
          end
          params0 = JArray_param{Int}()
          params0.size = 2
-         push!(params0.data, array55)
+         push!(params0.data, array35)
          params0.size += 1
-         push!(params0.data, array56)
+         push!(params0.data, array36)
          params0.size += 1
-         array57 = func42(params0, get_path(), loopsFactor);
-         array57.refC -= 1
-         if array57.refC == 0
-             empty!(array57.data)
-             array57 = nothing
+         array37 = func42(params0, get_path(), loopsFactor);
+         array37.refC -= 1
+         if array37.refC == 0
+             empty!(array37.data)
+             array37 = nothing
          end
-         array56.refC -= 1
-         if array56.refC == 0
-             empty!(array56.data)
-             array56 = nothing
+         array36.refC -= 1
+         if array36.refC == 0
+             empty!(array36.data)
+             array36 = nothing
          end
       
       else 
          params0 = JArray_param{Int}()
          params0.size = 1
-         push!(params0.data, array55)
+         push!(params0.data, array35)
          params0.size += 1
-         array58 = func34(params0, get_path(), loopsFactor);
-         array58.refC -= 1
-         if array58.refC == 0
-             empty!(array58.data)
-             array58 = nothing
+         array38 = func34(params0, loopsFactor);
+         array38.refC -= 1
+         if array38.refC == 0
+             empty!(array38.data)
+             array38 = nothing
          end
       end
-      array59 = nothing
+      array39 = nothing
       if pCounter > 1
-          array59 = vars.data[pCounter]
+          array39 = vars.data[pCounter]
           pCounter -= 1
-          array59.refC += 1
+          array39.refC += 1
       else
-          array59 = JArray(zeros(Int, 538), 538, 1, 59)
+          array39 = JArray(zeros(Int, 624), 624, 1, 39)
       end
       params0 = JArray_param{Int}()
       params0.size = 2
-      push!(params0.data, array55)
+      push!(params0.data, array35)
       params0.size += 1
-      push!(params0.data, array59)
+      push!(params0.data, array39)
       params0.size += 1
-      array60 = func35(params0, loopsFactor);
+      array40 = func35(params0, loopsFactor);
       if (PATH0 & 2) != 0
-         array61 = nothing
+         array41 = nothing
          if pCounter > 1
-             array61 = vars.data[pCounter]
+             array41 = vars.data[pCounter]
              pCounter -= 1
-             array61.refC += 1
+             array41.refC += 1
          else
-             array61 = JArray(zeros(Int, 904), 904, 1, 61)
+             array41 = JArray(zeros(Int, 732), 732, 1, 41)
          end
-         loopLimit20 = (50)/5 + 1
-         for i in 1:loopLimit20 
-            for i in 0:(array60.size-1) 
-               array60.data[i+1] -= 1
+         loopLimit14 = (50)/5 + 1
+         for i in 1:loopLimit14 
+            for i in 0:(array39.size-1) 
+               array39.data[i+1] -= 1
             end
-            for i in 1:array55.size
-                if array55.data[i] == 88
-                        return array55
+            for i in 1:array41.size
+                if array41.data[i] == 19
+                        return array41
                end
             end
          end
-         params1 = JArray_param{Int}()
-         params1.size = 4
-         push!(params1.data, array55)
-         params1.size += 1
-         push!(params1.data, array59)
-         params1.size += 1
-         push!(params1.data, array60)
-         params1.size += 1
-         push!(params1.data, array61)
-         params1.size += 1
-         array62 = func46(params1, get_path(), loopsFactor);
-         array62.refC -= 1
-         if array62.refC == 0
-             empty!(array62.data)
-             array62 = nothing
-         end
-         array61.refC -= 1
-         if array61.refC == 0
-             empty!(array61.data)
-             array61 = nothing
+         array41.refC -= 1
+         if array41.refC == 0
+             empty!(array41.data)
+             array41 = nothing
          end
       
       else 
          params1 = JArray_param{Int}()
          params1.size = 3
-         push!(params1.data, array55)
+         push!(params1.data, array35)
          params1.size += 1
-         push!(params1.data, array59)
+         push!(params1.data, array39)
          params1.size += 1
-         push!(params1.data, array60)
+         push!(params1.data, array40)
          params1.size += 1
-         array63 = func40(params1, loopsFactor);
-         array63.refC -= 1
-         if array63.refC == 0
-             empty!(array63.data)
-             array63 = nothing
+         array42 = func40(params1, loopsFactor);
+         array42.refC -= 1
+         if array42.refC == 0
+             empty!(array42.data)
+             array42 = nothing
          end
       end
-      for i in 1:array60.size
-          if array60.data[i] == 43
-                  return array60
+      for i in 1:array39.size
+          if array39.data[i] == 15
+                  return array39
          end
       end
-      array60.refC -= 1
-      if array60.refC == 0
-          empty!(array60.data)
-          array60 = nothing
+      array40.refC -= 1
+      if array40.refC == 0
+          empty!(array40.data)
+          array40 = nothing
       end
-      array59.refC -= 1
-      if array59.refC == 0
-          empty!(array59.data)
-          array59 = nothing
-      end
-   end
-   for i in 0:(array55.size-1) 
-      array55.data[i+1] -= 1
-   end
-   for i in 1:array55.size
-       if array55.data[i] == 90
-               return array55
+      array39.refC -= 1
+      if array39.refC == 0
+          empty!(array39.data)
+          array39 = nothing
       end
    end
-   return array55;
+   for i in 0:(array35.size-1) 
+      array35.data[i+1] -= 1
+   end
+   for i in 1:array35.size
+       if array35.data[i] == 96
+               return array35
+      end
+   end
+   return array35;
 end
 

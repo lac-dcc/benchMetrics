@@ -2,80 +2,80 @@
 array_t* func30(array_t_param* vars, const unsigned long PATH0, int loopsFactor) {
    size_t pCounter = vars->size;
    if(PATH0 & 1) {
-      array_t* array27;
+      array_t* array16;
       if (pCounter > 0) {
-         array27 = vars->data[--pCounter];
-         array27->refC++;
-         DEBUG_COPY(array27->id);
+         array16 = vars->data[--pCounter];
+         array16->refC++;
+         DEBUG_COPY(array16->id);
       } else {
-         array27 = (array_t*)malloc(sizeof(array_t));
-         array27->size = 434;
-         array27->refC = 1;
-         array27->id = 27;
-         array27->data = (unsigned int*)malloc(array27->size*sizeof(unsigned int));
-         memset(array27->data, 0, array27->size*sizeof(unsigned int));
-         DEBUG_NEW(array27->id);
+         array16 = (array_t*)malloc(sizeof(array_t));
+         array16->size = 84;
+         array16->refC = 1;
+         array16->id = 16;
+         array16->data = (unsigned int*)malloc(array16->size*sizeof(unsigned int));
+         memset(array16->data, 0, array16->size*sizeof(unsigned int));
+         DEBUG_NEW(array16->id);
       }
-      unsigned int loop10 = 0;
-      unsigned int loopLimit10 = (rand()%loopsFactor)/4 + 1;
-      for(; loop10 < loopLimit10; loop10++) {
-         for (int i = 0; i < array27->size; i++) {
-            array27->data[i]--;
+      unsigned int loop8 = 0;
+      unsigned int loopLimit8 = (50)/4 + 1;
+      for(; loop8 < loopLimit8; loop8++) {
+         for (int i = 0; i < array16->size; i++) {
+            array16->data[i]--;
          }
-         for (int i = 0; i < array27->size; i++) {
-            if (array27->data[i] == 1) { 
-               return array27;
+         for (int i = 0; i < array16->size; i++) {
+            if (array16->data[i] == 5) { 
+               return array16;
             }
          }
       }
       array_t_param params0;
       params0.size = 1;
       params0.data = (array_t**)malloc(params0.size*sizeof(array_t*));
-      params0.data[0] = array27;
-      array_t* array28 = func42(&params0, get_path(), loopsFactor);
-      DEBUG_RETURN(array28->id);
+      params0.data[0] = array16;
+      array_t* array17 = func42(&params0, get_path(), loopsFactor);
+      DEBUG_RETURN(array17->id);
       free(params0.data);
-      array28->refC--;
-      if(array28->refC == 0) {
-         free(array28->data);
-         free(array28);
-         DEBUG_FREE(array28->id);
+      array17->refC--;
+      if(array17->refC == 0) {
+         free(array17->data);
+         free(array17);
+         DEBUG_FREE(array17->id);
       }
-      array27->refC--;
-      if(array27->refC == 0) {
-         free(array27->data);
-         free(array27);
-         DEBUG_FREE(array27->id);
+      array16->refC--;
+      if(array16->refC == 0) {
+         free(array16->data);
+         free(array16);
+         DEBUG_FREE(array16->id);
       }
    }
    else {
       array_t_param params0;
       params0.size = 0;
       params0.data = (array_t**)malloc(params0.size*sizeof(array_t*));
-      array_t* array39 = func34(&params0, get_path(), loopsFactor);
-      DEBUG_RETURN(array39->id);
+      array_t* array24 = func34(&params0, loopsFactor);
+      DEBUG_RETURN(array24->id);
       free(params0.data);
-      array39->refC--;
-      if(array39->refC == 0) {
-         free(array39->data);
-         free(array39);
-         DEBUG_FREE(array39->id);
+      array24->refC--;
+      if(array24->refC == 0) {
+         free(array24->data);
+         free(array24);
+         DEBUG_FREE(array24->id);
       }
    }
-   array_t* array45;
+   array_t* array26;
    if (pCounter > 0) {
-      array45 = vars->data[--pCounter];
-      array45->refC++;
-      DEBUG_COPY(array45->id);
+      array26 = vars->data[--pCounter];
+      array26->refC++;
+      DEBUG_COPY(array26->id);
    } else {
-      array45 = (array_t*)malloc(sizeof(array_t));
-      array45->size = 841;
-      array45->refC = 1;
-      array45->id = 45;
-      array45->data = (unsigned int*)malloc(array45->size*sizeof(unsigned int));
-      memset(array45->data, 0, array45->size*sizeof(unsigned int));
-      DEBUG_NEW(array45->id);
+      array26 = (array_t*)malloc(sizeof(array_t));
+      array26->size = 795;
+      array26->refC = 1;
+      array26->id = 26;
+      array26->data = (unsigned int*)malloc(array26->size*sizeof(unsigned int));
+      memset(array26->data, 0, array26->size*sizeof(unsigned int));
+      DEBUG_NEW(array26->id);
    }
-   return array45;
+   return array26;
 }
 

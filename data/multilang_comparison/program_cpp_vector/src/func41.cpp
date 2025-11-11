@@ -1,47 +1,31 @@
 #include "program_cpp_vector.hpp" 
 Array* func41(Array_param* vars, int loopsFactor) {
    size_t pCounter = vars->size;
-   Array* array20;
+   Array* array13;
    if (pCounter > 0) {
-      array20 = vars->data.at(--pCounter);
-      array20->refC++;
-      DEBUG_COPY(array20->id);
+      array13 = vars->data.at(--pCounter);
+      array13->refC++;
+      DEBUG_COPY(array13->id);
    } else {
-      array20 = new Array();
-      array20->size = 814;
-      array20->refC = 1;
-      array20->id = 20;
-      array20->data = std::vector<unsigned int>(array20->size, 0);
-      DEBUG_NEW(array20->id);
+      array13 = new Array();
+      array13->size = 370;
+      array13->refC = 1;
+      array13->id = 13;
+      array13->data = std::vector<unsigned int>(array13->size, 0);
+      DEBUG_NEW(array13->id);
    }
-   Array_param params0;
-   params0.size = 1;
-   std::vector<Array*> data_params0(1);
-   params0.data = data_params0;
-   params0.data.at(0) = array20;
-   Array* array21 = func46(&params0, get_path(), loopsFactor);
-   DEBUG_RETURN(array21->id);
-   if(params0.data.size() > 0) {
-   	params0.data.clear();
-   }
-   unsigned int loop8 = 0;
-   unsigned int loopLimit8 = (50)/5 + 1;
-   for(; loop8 < loopLimit8; loop8++) {
-      for (int i = 0; i < array20->size; i++) {
-         array20->data.at(i)++;
+   unsigned int loop7 = 0;
+   unsigned int loopLimit7 = (50)/5 + 1;
+   for(; loop7 < loopLimit7; loop7++) {
+      for (int i = 0; i < array13->size; i++) {
+         array13->data.at(i)++;
       }
    }
-   for (int i = 0; i < array21->size; i++) {
-       if (array21->data.at(i) == 50) {
-           return array21;
+   for (int i = 0; i < array13->size; i++) {
+       if (array13->data.at(i) == 91) {
+           return array13;
        }
    }
-   array20->refC--;
-   if(array20->refC == 0) {
-      array20->data.clear();
-      delete array20;
-      DEBUG_FREE(array20->id);
-   }
-   return array21;
+   return array13;
 }
 

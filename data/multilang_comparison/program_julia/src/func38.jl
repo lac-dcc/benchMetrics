@@ -2,59 +2,49 @@ include("program_julia_head.jl")
 function func38(vars::JArray_param, PATH0::UInt64, loopsFactor::Int)::JArray
    pCounter = length(vars.data)
    if (PATH0 & 1) != 0
-      array77 = nothing
+      array52 = nothing
       if pCounter > 1
-          array77 = vars.data[pCounter]
+          array52 = vars.data[pCounter]
           pCounter -= 1
-          array77.refC += 1
+          array52.refC += 1
       else
-          array77 = JArray(zeros(Int, 416), 416, 1, 77)
+          array52 = JArray(zeros(Int, 275), 275, 1, 52)
       end
-      loopLimit25 = (50)/4 + 1
-      for i in 1:loopLimit25 
-         for i in 0:(array77.size-1) 
-            array77.data[i+1] -= 1
+      loopLimit18 = (50)/4 + 1
+      for i in 1:loopLimit18 
+         for i in 0:(array52.size-1) 
+            array52.data[i+1] -= 1
          end
-         for i in 1:array77.size
-             if array77.data[i] == 24
-                     return array77
+         for i in 1:array52.size
+             if array52.data[i] == 21
+                     return array52
             end
          end
       end
-      params0 = JArray_param{Int}()
-      params0.size = 1
-      push!(params0.data, array77)
-      params0.size += 1
-      array78 = func46(params0, get_path(), loopsFactor);
-      array78.refC -= 1
-      if array78.refC == 0
-          empty!(array78.data)
-          array78 = nothing
-      end
-      array77.refC -= 1
-      if array77.refC == 0
-          empty!(array77.data)
-          array77 = nothing
+      array52.refC -= 1
+      if array52.refC == 0
+          empty!(array52.data)
+          array52 = nothing
       end
    
    else 
       params0 = JArray_param{Int}()
       params0.size = 0
-      array79 = func40(params0, loopsFactor);
-      array79.refC -= 1
-      if array79.refC == 0
-          empty!(array79.data)
-          array79 = nothing
+      array53 = func40(params0, loopsFactor);
+      array53.refC -= 1
+      if array53.refC == 0
+          empty!(array53.data)
+          array53 = nothing
       end
    end
-   array80 = nothing
+   array54 = nothing
    if pCounter > 1
-       array80 = vars.data[pCounter]
+       array54 = vars.data[pCounter]
        pCounter -= 1
-       array80.refC += 1
+       array54.refC += 1
    else
-       array80 = JArray(zeros(Int, 36), 36, 1, 80)
+       array54 = JArray(zeros(Int, 29), 29, 1, 54)
    end
-   return array80;
+   return array54;
 end
 

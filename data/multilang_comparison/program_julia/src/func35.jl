@@ -1,35 +1,35 @@
 include("program_julia_head.jl")
 function func35(vars::JArray_param, loopsFactor::Int)::JArray
    pCounter = length(vars.data)
-   array49 = nothing
+   array30 = nothing
    if pCounter > 1
-       array49 = vars.data[pCounter]
+       array30 = vars.data[pCounter]
        pCounter -= 1
-       array49.refC += 1
+       array30.refC += 1
    else
-       array49 = JArray(zeros(Int, 491), 491, 1, 49)
+       array30 = JArray(zeros(Int, 756), 756, 1, 30)
    end
    params0 = JArray_param{Int}()
    params0.size = 1
-   push!(params0.data, array49)
+   push!(params0.data, array30)
    params0.size += 1
-   array50 = func42(params0, get_path(), loopsFactor);
-   loopLimit16 = (50)/4 + 1
-   for i in 1:loopLimit16 
-      for i in 0:(array50.size-1) 
-         array50.data[i+1] += 1
+   array31 = func42(params0, get_path(), loopsFactor);
+   loopLimit10 = (50)/4 + 1
+   for i in 1:loopLimit10 
+      for i in 0:(array30.size-1) 
+         array30.data[i+1] += 1
       end
    end
-   for i in 1:array49.size
-       if array49.data[i] == 32
-               return array49
+   for i in 1:array31.size
+       if array31.data[i] == 65
+               return array31
       end
    end
-   array49.refC -= 1
-   if array49.refC == 0
-       empty!(array49.data)
-       array49 = nothing
+   array30.refC -= 1
+   if array30.refC == 0
+       empty!(array30.data)
+       array30 = nothing
    end
-   return array50;
+   return array31;
 end
 
