@@ -1,0 +1,190 @@
+module func7;
+import program_d;
+
+array_t* func7(array_t_param* vars, const ulong PATH0, int loopsFactor) {
+   size_t pCounter = vars.size;
+   uint loop47 = 0;
+   uint loopLimit47 = (50)/2 + 1;
+   for(; loop47 < loopLimit47; loop47++) {
+      if(PATH0 & 1) {
+         array_t* array160;
+         if (pCounter > 0) {
+            array160 = vars.data[--pCounter];
+            array160.refC++;
+            DEBUG_COPY(array160.id);
+         } else {
+            array160 = cast(array_t*)malloc(array_t.sizeof);
+            array160.size = 690;
+            array160.refC = 1;
+            array160.id = 160;
+            array160.data = cast(uint*)malloc(array160.size*uint.sizeof);
+            memset(array160.data, 0, array160.size*uint.sizeof);
+            DEBUG_NEW(array160.id);
+         }
+         uint loop48 = 0;
+         uint loopLimit48 = (50)/3 + 1;
+         for(; loop48 < loopLimit48; loop48++) {
+            for (int i = 0; i < array160.size; i++) {
+               array160.data[i]--;
+            }
+            for (int i = 0; i < array160.size; i++) {
+               if (array160.data[i] == 57) { 
+                  return array160;
+               }
+            }
+         }
+         array_t_param params0;
+         params0.size = 1;
+         params0.data = cast(array_t**)malloc(params0.size*(array_t*).sizeof);
+         params0.data[0] = array160;
+         array_t* array161 = func24(&params0, get_path(), loopsFactor);
+         DEBUG_RETURN(array161.id);
+         free(params0.data);
+         array161.refC--;
+         if(array161.refC == 0) {
+            free(array161.data);
+            free(array161);
+            DEBUG_FREE(array161.id);
+         }
+         array160.refC--;
+         if(array160.refC == 0) {
+            free(array160.data);
+            free(array160);
+            DEBUG_FREE(array160.id);
+         }
+      }
+      else {
+         array_t_param params0;
+         params0.size = 0;
+         params0.data = cast(array_t**)malloc(params0.size*(array_t*).sizeof);
+         array_t* array162 = func16(&params0, get_path(), loopsFactor);
+         DEBUG_RETURN(array162.id);
+         free(params0.data);
+         array162.refC--;
+         if(array162.refC == 0) {
+            free(array162.data);
+            free(array162);
+            DEBUG_FREE(array162.id);
+         }
+      }
+      array_t* array163;
+      if (pCounter > 0) {
+         array163 = vars.data[--pCounter];
+         array163.refC++;
+         DEBUG_COPY(array163.id);
+      } else {
+         array163 = cast(array_t*)malloc(array_t.sizeof);
+         array163.size = 312;
+         array163.refC = 1;
+         array163.id = 163;
+         array163.data = cast(uint*)malloc(array163.size*uint.sizeof);
+         memset(array163.data, 0, array163.size*uint.sizeof);
+         DEBUG_NEW(array163.id);
+      }
+      array_t_param params0;
+      params0.size = 1;
+      params0.data = cast(array_t**)malloc(params0.size*(array_t*).sizeof);
+      params0.data[0] = array163;
+      array_t* array164 = func17(&params0, loopsFactor);
+      DEBUG_RETURN(array164.id);
+      free(params0.data);
+      if(PATH0 & 2) {
+         array_t* array165;
+         if (pCounter > 0) {
+            array165 = vars.data[--pCounter];
+            array165.refC++;
+            DEBUG_COPY(array165.id);
+         } else {
+            array165 = cast(array_t*)malloc(array_t.sizeof);
+            array165.size = 346;
+            array165.refC = 1;
+            array165.id = 165;
+            array165.data = cast(uint*)malloc(array165.size*uint.sizeof);
+            memset(array165.data, 0, array165.size*uint.sizeof);
+            DEBUG_NEW(array165.id);
+         }
+         uint loop49 = 0;
+         uint loopLimit49 = (50)/3 + 1;
+         for(; loop49 < loopLimit49; loop49++) {
+            for (int i = 0; i < array163.size; i++) {
+               array163.data[i]--;
+            }
+            for (int i = 0; i < array163.size; i++) {
+               if (array163.data[i] == 16) { 
+                  return array163;
+               }
+            }
+         }
+         array_t_param params1;
+         params1.size = 3;
+         params1.data = cast(array_t**)malloc(params1.size*(array_t*).sizeof);
+         params1.data[0] = array163;
+         params1.data[1] = array164;
+         params1.data[2] = array165;
+         array_t* array166 = func28(&params1, get_path(), loopsFactor);
+         DEBUG_RETURN(array166.id);
+         free(params1.data);
+         array166.refC--;
+         if(array166.refC == 0) {
+            free(array166.data);
+            free(array166);
+            DEBUG_FREE(array166.id);
+         }
+         array165.refC--;
+         if(array165.refC == 0) {
+            free(array165.data);
+            free(array165);
+            DEBUG_FREE(array165.id);
+         }
+      }
+      else {
+         array_t_param params1;
+         params1.size = 2;
+         params1.data = cast(array_t**)malloc(params1.size*(array_t*).sizeof);
+         params1.data[0] = array163;
+         params1.data[1] = array164;
+         array_t* array167 = func22(&params1, get_path(), loopsFactor);
+         DEBUG_RETURN(array167.id);
+         free(params1.data);
+         array167.refC--;
+         if(array167.refC == 0) {
+            free(array167.data);
+            free(array167);
+            DEBUG_FREE(array167.id);
+         }
+      }
+      for (int i = 0; i < array163.size; i++) {
+         if (array163.data[i] == 47) { 
+            return array163;
+         }
+      }
+      array164.refC--;
+      if(array164.refC == 0) {
+         free(array164.data);
+         free(array164);
+         DEBUG_FREE(array164.id);
+      }
+      array163.refC--;
+      if(array163.refC == 0) {
+         free(array163.data);
+         free(array163);
+         DEBUG_FREE(array163.id);
+      }
+   }
+   array_t* array168;
+   if (pCounter > 0) {
+      array168 = vars.data[--pCounter];
+      array168.refC++;
+      DEBUG_COPY(array168.id);
+   } else {
+      array168 = cast(array_t*)malloc(array_t.sizeof);
+      array168.size = 970;
+      array168.refC = 1;
+      array168.id = 168;
+      array168.data = cast(uint*)malloc(array168.size*uint.sizeof);
+      memset(array168.data, 0, array168.size*uint.sizeof);
+      DEBUG_NEW(array168.id);
+   }
+   return array168;
+}
+
